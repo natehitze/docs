@@ -1,0 +1,353 @@
+{
+  "homepages": [],
+  "source_base_path": "/github/workspace",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      },
+      "is_incremental": false
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "YOTlUX4CMC8AUlM937Bdkg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/fonts/customrendering.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/fonts/customrendering.html",
+          "hash": "l60VRZAVyk/R/SIF+8lypA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/fonts/gettingstarted.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/fonts/gettingstarted.html",
+          "hash": "b0wGyWc3o+O6XP6LZf/ltQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/fonts/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/fonts/index.html",
+          "hash": "XYaRQmd5dACBL5zvQOVF6g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "articles/imagesharp.drawing/gettingstarted.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/imagesharp.drawing/gettingstarted.html",
+          "hash": "uy+lhRjFX71C3gc0vDZLHg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/imagesharp.drawing/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/imagesharp.drawing/index.html",
+          "hash": "gcUVSj5TaioTcV8VWZZgTg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "UidNotFound"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "articles/imagesharp.web/gettingstarted.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/imagesharp.web/gettingstarted.html",
+          "hash": "L/vW5XnpKR6isTR4JgebZg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/imagesharp.web/imagecaches.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/imagesharp.web/imagecaches.html",
+          "hash": "J+SfxHyVWI+1cCbeasnPKg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/imagesharp.web/imageproviders.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/imagesharp.web/imageproviders.html",
+          "hash": "nQrNcIziqVgHWRmnWD43pg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/imagesharp.web/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/imagesharp.web/index.html",
+          "hash": "PMFZUBpx6DqvDmw2ohtfGA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/imagesharp.web/processingcommands.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/imagesharp.web/processingcommands.html",
+          "hash": "44zdX+rcRkn6mjN0YGKzaw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/imagesharp/configuration.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/imagesharp/configuration.html",
+          "hash": "gGakbxM6YQwVM5GfhW0Zvw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/imagesharp/gettingstarted.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/imagesharp/gettingstarted.html",
+          "hash": "IFh9jJqpP9Ayjls7PjPVyA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "UidNotFound"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "articles/imagesharp/imageformats.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/imagesharp/imageformats.html",
+          "hash": "rmPA7ODq/K28jw0Sc8mhJw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/imagesharp/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/imagesharp/index.html",
+          "hash": "kE8ASXDcTaAMdfRCTlnAGg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/imagesharp/memorymanagement.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/imagesharp/memorymanagement.html",
+          "hash": "kEUqrlqaMTfuqzVAHbqAvQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/imagesharp/pixelbuffers.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/imagesharp/pixelbuffers.html",
+          "hash": "m1D699N5GV0CUNGNxLuOxg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/imagesharp/pixelformats.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/imagesharp/pixelformats.html",
+          "hash": "Pd7bv9UuVBzxhcpBLy5GKQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "UidNotFound"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "articles/imagesharp/processing.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/imagesharp/processing.html",
+          "hash": "b8khGDEmMBouNBb23+tJcA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "UidNotFound"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "articles/imagesharp/resize.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/imagesharp/resize.html",
+          "hash": "9A3D11huAdFVHcNJiOb3lg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "EXmBZgprZLB8tk1GtU2qRw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "YXpco8PJ9odJ+InsVeXA7A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "nqnEMvnX9h3okCBUphsk3g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "NoAvailableBuildCache"
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 21,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: should not trace intermediate info.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

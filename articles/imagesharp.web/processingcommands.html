@@ -1,0 +1,181 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Processing Commands </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Processing Commands ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="processing-commands">Processing Commands</h1>
+
+<p>The ImageSharp.Web processing API is imperative. This means that the order in which you supply the individual processing operations is the order in which they are are compiled and applied. This allows the API to be very flexible, allowing you to combine processes in any order.  </p>
+<div class="NOTE"><h5>Note</h5><p>It is possible to configure your own processing command pipeline by implementing and registering your own version of the @&quot;SixLabors.ImageSharp.Web.Commands.IRequestParser&quot; interface.</p>
+</div>
+<p>The following processors are built into the middleware. In addition extension points are available to register you own command processors.</p>
+<h4 id="resize">Resize</h4>
+<p>Allows the resizing of images.</p>
+<pre><code class="lang-bash">{PATH_TO_YOUR_IMAGE}?width=300
+{PATH_TO_YOUR_IMAGE}?width=300&amp;height=120&amp;rxy=30,30
+{PATH_TO_YOUR_IMAGE}?width=50&amp;height=50&amp;rsampler=nearest&amp;rmode=stretch
+</code></pre><p>Resize commands represent the @&quot;SixLabors.ImageSharp.Processing.ResizeOptions&quot; class.</p>
+<ul>
+<li><code>width</code> The width of the image in px. Use only one dimension to preseve the aspect ratio.</li>
+<li><code>height</code> The height of the image in px. Use only one dimension to preseve the aspect ratio.</li>
+<li><code>rmode</code> The @&quot;SixLabors.ImageSharp.Processing.ResizeMode&quot; to use.</li>
+<li><code>rsampler</code> The @&quot;SixLabors.ImageSharp.Processing.Processors.Transforms.IResampler&quot;
+sampler to use.<ul>
+<li><code>bicubic</code> @&quot;SixLabors.ImageSharp.Processing.KnownResamplers.Bicubic&quot;</li>
+<li><code>nearest</code> @&quot;SixLabors.ImageSharp.Processing.KnownResamplers.NearestNeighbor&quot;</li>
+<li><code>box</code> @&quot;SixLabors.ImageSharp.Processing.KnownResamplers.Box&quot;</li>
+<li><code>mitchell</code> @&quot;SixLabors.ImageSharp.Processing.KnownResamplers.MitchellNetravali&quot;</li>
+<li><code>catmull</code> @&quot;SixLabors.ImageSharp.Processing.KnownResamplers.CatmullRom&quot;  </li>
+<li><code>lanczos2</code> @&quot;SixLabors.ImageSharp.Processing.KnownResamplers.Lanczos2&quot;  </li>
+<li><code>lanczos3</code> @&quot;SixLabors.ImageSharp.Processing.KnownResamplers.Lanczos3&quot;</li>
+<li><code>lanczos5</code> @&quot;SixLabors.ImageSharp.Processing.KnownResamplers.Lanczos5&quot;</li>
+<li><code>lanczos8</code> @&quot;SixLabors.ImageSharp.Processing.KnownResamplers.Lanczos8&quot;</li>
+<li><code>welch</code> @&quot;SixLabors.ImageSharp.Processing.KnownResamplers.Welch&quot;  </li>
+<li><code>robidoux</code> @&quot;SixLabors.ImageSharp.Processing.KnownResamplers.Robidoux&quot;  </li>
+<li><code>robidouxsharp</code> @&quot;SixLabors.ImageSharp.Processing.KnownResamplers.RobidouxSharp&quot;</li>
+<li><code>spline</code> @&quot;SixLabors.ImageSharp.Processing.KnownResamplers.Spline&quot;  </li>
+<li><code>triangle</code> @&quot;SixLabors.ImageSharp.Processing.KnownResamplers.Triangle&quot;  </li>
+<li><code>hermite</code> @&quot;SixLabors.ImageSharp.Processing.KnownResamplers.Hermite&quot;  </li>
+</ul>
+</li>
+<li><code>rxy</code> The center position to anchor the image center point to.</li>
+<li><code>ranchor</code>The @&quot;SixLabors.ImageSharp.Processing.AnchorPositionMode&quot; to use.</li>
+<li><code>compand</code> Whether to compress and expand individual pixel colors values to/from a linear color space when processing.</li>
+</ul>
+<h4 id="format">Format</h4>
+<p>Allows the encoding of the output image to a new image format. The available formats depend on your configuration settings.</p>
+<pre><code>{PATH_TO_YOUR_IMAGE}?format=jpg
+{PATH_TO_YOUR_IMAGE}?format=gif
+{PATH_TO_YOUR_IMAGE}?format=png
+{PATH_TO_YOUR_IMAGE}?format=bmp
+{PATH_TO_YOUR_IMAGE}?format=tga
+</code></pre><h4 id="quality">Quality</h4>
+<p>Allows the encoding of the output image at the given quality.</p>
+<ul>
+<li>For Jpeg this ranges from 1—100.</li>
+</ul>
+<pre><code>{PATH_TO_YOUR_IMAGE}?quality=90
+{PATH_TO_YOUR_IMAGE}?format=jpg&amp;quality=42
+</code></pre><div class="NOTE"><h5>Note</h5><p>Only certain formats support adjustable quality. This is a constraint of individual image standards not the API.</p>
+</div>
+<h4 id="background-color">Background Color</h4>
+<p>Allows the changing of the background color of transparent images.</p>
+<pre><code>{PATH_TO_YOUR_IMAGE}?bgcolor=FFFF00
+{PATH_TO_YOUR_IMAGE}?bgcolor=C1FF0080
+{PATH_TO_YOUR_IMAGE}?bgcolor=red
+{PATH_TO_YOUR_IMAGE}?bgcolor=128,64,32
+{PATH_TO_YOUR_IMAGE}?bgcolor=128,64,32,16
+</code></pre></article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/SixLabors/docs/blob/master/articles/imagesharp.web/processingcommands.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>
