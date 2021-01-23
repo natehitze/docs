@@ -95,35 +95,11 @@
     <h5>Implements</h5>
     <div><a class="xref" href="SixLabors.ImageSharp.Drawing.ILineSegment.html">ILineSegment</a></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="SixLabors.ImageSharp.Drawing.html">SixLabors.ImageSharp.Drawing</a></h6>
   <h6><strong>Assembly</strong>: SixLabors.ImageSharp.Drawing.dll</h6>
   <h5 id="SixLabors_ImageSharp_Drawing_LinearLineSegment_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class LinearLineSegment : ILineSegment</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class LinearLineSegment : object, ILineSegment</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -309,7 +285,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.readonlymemory-1">ReadOnlyMemory</a>&lt;<span class="xref">PointF</span>&gt;</td>
+        <td><span class="xref">ReadOnlyMemory</span>&lt;<span class="xref">PointF</span>&gt;</td>
         <td><p>Returns the current <a class="xref" href="SixLabors.ImageSharp.Drawing.ILineSegment.html">ILineSegment</a> as simple linear path.</p>
 </td>
       </tr>
@@ -317,13 +293,13 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/SixLabors/ImageSharp.Drawing/new/master/apiSpec/new?filename=SixLabors_ImageSharp_Drawing_LinearLineSegment_Transform_System_Numerics_Matrix3x2_.md&amp;value=---%0Auid%3A%20SixLabors.ImageSharp.Drawing.LinearLineSegment.Transform(System.Numerics.Matrix3x2)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/SixLabors/ImageSharp.Drawing/new/master/apiSpec/new?filename=SixLabors_ImageSharp_Drawing_LinearLineSegment_Transform_Matrix3x2_.md&amp;value=---%0Auid%3A%20SixLabors.ImageSharp.Drawing.LinearLineSegment.Transform(Matrix3x2)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/SixLabors/ImageSharp.Drawing/blob/3d737b5d957c5f1e52c03a3e513f7769873db013/src/ImageSharp.Drawing/Shapes/LinearLineSegment.cs/#L78">View Source</a>
   </span>
   <a id="SixLabors_ImageSharp_Drawing_LinearLineSegment_Transform_" data-uid="SixLabors.ImageSharp.Drawing.LinearLineSegment.Transform*"></a>
-  <h4 id="SixLabors_ImageSharp_Drawing_LinearLineSegment_Transform_System_Numerics_Matrix3x2_" data-uid="SixLabors.ImageSharp.Drawing.LinearLineSegment.Transform(System.Numerics.Matrix3x2)">Transform(Matrix3x2)</h4>
+  <h4 id="SixLabors_ImageSharp_Drawing_LinearLineSegment_Transform_Matrix3x2_" data-uid="SixLabors.ImageSharp.Drawing.LinearLineSegment.Transform(Matrix3x2)">Transform(Matrix3x2)</h4>
   <div class="markdown level1 summary"><p>Transforms the current LineSegment using specified matrix.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -342,7 +318,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.numerics.matrix3x2">Matrix3x2</a></td>
+        <td><span class="xref">Matrix3x2</span></td>
         <td><span class="parametername">matrix</span></td>
         <td><p>The matrix.</p>
 </td>
@@ -369,13 +345,13 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/SixLabors/ImageSharp.Drawing/new/master/apiSpec/new?filename=SixLabors_ImageSharp_Drawing_LinearLineSegment_SixLabors_ImageSharp_Drawing_ILineSegment_Transform_System_Numerics_Matrix3x2_.md&amp;value=---%0Auid%3A%20SixLabors.ImageSharp.Drawing.LinearLineSegment.SixLabors%23ImageSharp%23Drawing%23ILineSegment%23Transform(System.Numerics.Matrix3x2)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/SixLabors/ImageSharp.Drawing/new/master/apiSpec/new?filename=SixLabors_ImageSharp_Drawing_LinearLineSegment_SixLabors_ImageSharp_Drawing_ILineSegment_Transform_Matrix3x2_.md&amp;value=---%0Auid%3A%20SixLabors.ImageSharp.Drawing.LinearLineSegment.SixLabors%23ImageSharp%23Drawing%23ILineSegment%23Transform(Matrix3x2)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/SixLabors/ImageSharp.Drawing/blob/3d737b5d957c5f1e52c03a3e513f7769873db013/src/ImageSharp.Drawing/Shapes/LinearLineSegment.cs/#L101">View Source</a>
   </span>
   <a id="SixLabors_ImageSharp_Drawing_LinearLineSegment_SixLabors_ImageSharp_Drawing_ILineSegment_Transform_" data-uid="SixLabors.ImageSharp.Drawing.LinearLineSegment.SixLabors#ImageSharp#Drawing#ILineSegment#Transform*"></a>
-  <h4 id="SixLabors_ImageSharp_Drawing_LinearLineSegment_SixLabors_ImageSharp_Drawing_ILineSegment_Transform_System_Numerics_Matrix3x2_" data-uid="SixLabors.ImageSharp.Drawing.LinearLineSegment.SixLabors#ImageSharp#Drawing#ILineSegment#Transform(System.Numerics.Matrix3x2)">ILineSegment.Transform(Matrix3x2)</h4>
+  <h4 id="SixLabors_ImageSharp_Drawing_LinearLineSegment_SixLabors_ImageSharp_Drawing_ILineSegment_Transform_Matrix3x2_" data-uid="SixLabors.ImageSharp.Drawing.LinearLineSegment.SixLabors#ImageSharp#Drawing#ILineSegment#Transform(Matrix3x2)">ILineSegment.Transform(Matrix3x2)</h4>
   <div class="markdown level1 summary"><p>Transforms the current LineSegment using specified matrix.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -394,7 +370,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.numerics.matrix3x2">Matrix3x2</a></td>
+        <td><span class="xref">Matrix3x2</span></td>
         <td><span class="parametername">matrix</span></td>
         <td><p>The matrix.</p>
 </td>

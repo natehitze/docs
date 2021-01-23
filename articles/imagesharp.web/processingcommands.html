@@ -80,7 +80,7 @@
 <h1 id="processing-commands">Processing Commands</h1>
 
 <p>The ImageSharp.Web processing API is imperative. This means that the order in which you supply the individual processing operations is the order in which they are are compiled and applied. This allows the API to be very flexible, allowing you to combine processes in any order.  </p>
-<div class="NOTE"><h5>Note</h5><p>It is possible to configure your own processing command pipeline by implementing and registering your own version of the @&quot;SixLabors.ImageSharp.Web.Commands.IRequestParser&quot; interface.</p>
+<div class="NOTE"><h5>Note</h5><p>It is possible to configure your own processing command pipeline by implementing and registering your own version of the <a class="xref" href="../../api/ImageSharp.Web/SixLabors.ImageSharp.Web.Commands.IRequestParser.html">IRequestParser</a> interface.</p>
 </div>
 <p>The following processors are built into the middleware. In addition extension points are available to register you own command processors.</p>
 <h4 id="resize">Resize</h4>
@@ -88,32 +88,32 @@
 <pre><code class="lang-bash">{PATH_TO_YOUR_IMAGE}?width=300
 {PATH_TO_YOUR_IMAGE}?width=300&amp;height=120&amp;rxy=30,30
 {PATH_TO_YOUR_IMAGE}?width=50&amp;height=50&amp;rsampler=nearest&amp;rmode=stretch
-</code></pre><p>Resize commands represent the @&quot;SixLabors.ImageSharp.Processing.ResizeOptions&quot; class.</p>
+</code></pre><p>Resize commands represent the <a class="xref" href="../../api/ImageSharp/SixLabors.ImageSharp.Processing.ResizeOptions.html">ResizeOptions</a> class.</p>
 <ul>
 <li><code>width</code> The width of the image in px. Use only one dimension to preseve the aspect ratio.</li>
 <li><code>height</code> The height of the image in px. Use only one dimension to preseve the aspect ratio.</li>
-<li><code>rmode</code> The @&quot;SixLabors.ImageSharp.Processing.ResizeMode&quot; to use.</li>
-<li><code>rsampler</code> The @&quot;SixLabors.ImageSharp.Processing.Processors.Transforms.IResampler&quot;
+<li><code>rmode</code> The <a class="xref" href="../../api/ImageSharp/SixLabors.ImageSharp.Processing.ResizeMode.html">ResizeMode</a> to use.</li>
+<li><code>rsampler</code> The <a class="xref" href="../../api/ImageSharp/SixLabors.ImageSharp.Processing.Processors.Transforms.IResampler.html">IResampler</a>
 sampler to use.<ul>
-<li><code>bicubic</code> @&quot;SixLabors.ImageSharp.Processing.KnownResamplers.Bicubic&quot;</li>
-<li><code>nearest</code> @&quot;SixLabors.ImageSharp.Processing.KnownResamplers.NearestNeighbor&quot;</li>
-<li><code>box</code> @&quot;SixLabors.ImageSharp.Processing.KnownResamplers.Box&quot;</li>
-<li><code>mitchell</code> @&quot;SixLabors.ImageSharp.Processing.KnownResamplers.MitchellNetravali&quot;</li>
-<li><code>catmull</code> @&quot;SixLabors.ImageSharp.Processing.KnownResamplers.CatmullRom&quot;  </li>
-<li><code>lanczos2</code> @&quot;SixLabors.ImageSharp.Processing.KnownResamplers.Lanczos2&quot;  </li>
-<li><code>lanczos3</code> @&quot;SixLabors.ImageSharp.Processing.KnownResamplers.Lanczos3&quot;</li>
-<li><code>lanczos5</code> @&quot;SixLabors.ImageSharp.Processing.KnownResamplers.Lanczos5&quot;</li>
-<li><code>lanczos8</code> @&quot;SixLabors.ImageSharp.Processing.KnownResamplers.Lanczos8&quot;</li>
-<li><code>welch</code> @&quot;SixLabors.ImageSharp.Processing.KnownResamplers.Welch&quot;  </li>
-<li><code>robidoux</code> @&quot;SixLabors.ImageSharp.Processing.KnownResamplers.Robidoux&quot;  </li>
-<li><code>robidouxsharp</code> @&quot;SixLabors.ImageSharp.Processing.KnownResamplers.RobidouxSharp&quot;</li>
-<li><code>spline</code> @&quot;SixLabors.ImageSharp.Processing.KnownResamplers.Spline&quot;  </li>
-<li><code>triangle</code> @&quot;SixLabors.ImageSharp.Processing.KnownResamplers.Triangle&quot;  </li>
-<li><code>hermite</code> @&quot;SixLabors.ImageSharp.Processing.KnownResamplers.Hermite&quot;  </li>
+<li><code>bicubic</code> <a class="xref" href="../../api/ImageSharp/SixLabors.ImageSharp.Processing.KnownResamplers.html#SixLabors_ImageSharp_Processing_KnownResamplers_Bicubic">Bicubic</a></li>
+<li><code>nearest</code> <a class="xref" href="../../api/ImageSharp/SixLabors.ImageSharp.Processing.KnownResamplers.html#SixLabors_ImageSharp_Processing_KnownResamplers_NearestNeighbor">NearestNeighbor</a></li>
+<li><code>box</code> <a class="xref" href="../../api/ImageSharp/SixLabors.ImageSharp.Processing.KnownResamplers.html#SixLabors_ImageSharp_Processing_KnownResamplers_Box">Box</a></li>
+<li><code>mitchell</code> <a class="xref" href="../../api/ImageSharp/SixLabors.ImageSharp.Processing.KnownResamplers.html#SixLabors_ImageSharp_Processing_KnownResamplers_MitchellNetravali">MitchellNetravali</a></li>
+<li><code>catmull</code> <a class="xref" href="../../api/ImageSharp/SixLabors.ImageSharp.Processing.KnownResamplers.html#SixLabors_ImageSharp_Processing_KnownResamplers_CatmullRom">CatmullRom</a>  </li>
+<li><code>lanczos2</code> <a class="xref" href="../../api/ImageSharp/SixLabors.ImageSharp.Processing.KnownResamplers.html#SixLabors_ImageSharp_Processing_KnownResamplers_Lanczos2">Lanczos2</a>  </li>
+<li><code>lanczos3</code> <a class="xref" href="../../api/ImageSharp/SixLabors.ImageSharp.Processing.KnownResamplers.html#SixLabors_ImageSharp_Processing_KnownResamplers_Lanczos3">Lanczos3</a></li>
+<li><code>lanczos5</code> <a class="xref" href="../../api/ImageSharp/SixLabors.ImageSharp.Processing.KnownResamplers.html#SixLabors_ImageSharp_Processing_KnownResamplers_Lanczos5">Lanczos5</a></li>
+<li><code>lanczos8</code> <a class="xref" href="../../api/ImageSharp/SixLabors.ImageSharp.Processing.KnownResamplers.html#SixLabors_ImageSharp_Processing_KnownResamplers_Lanczos8">Lanczos8</a></li>
+<li><code>welch</code> <a class="xref" href="../../api/ImageSharp/SixLabors.ImageSharp.Processing.KnownResamplers.html#SixLabors_ImageSharp_Processing_KnownResamplers_Welch">Welch</a>  </li>
+<li><code>robidoux</code> <a class="xref" href="../../api/ImageSharp/SixLabors.ImageSharp.Processing.KnownResamplers.html#SixLabors_ImageSharp_Processing_KnownResamplers_Robidoux">Robidoux</a>  </li>
+<li><code>robidouxsharp</code> <a class="xref" href="../../api/ImageSharp/SixLabors.ImageSharp.Processing.KnownResamplers.html#SixLabors_ImageSharp_Processing_KnownResamplers_RobidouxSharp">RobidouxSharp</a></li>
+<li><code>spline</code> <a class="xref" href="../../api/ImageSharp/SixLabors.ImageSharp.Processing.KnownResamplers.html#SixLabors_ImageSharp_Processing_KnownResamplers_Spline">Spline</a>  </li>
+<li><code>triangle</code> <a class="xref" href="../../api/ImageSharp/SixLabors.ImageSharp.Processing.KnownResamplers.html#SixLabors_ImageSharp_Processing_KnownResamplers_Triangle">Triangle</a>  </li>
+<li><code>hermite</code> <a class="xref" href="../../api/ImageSharp/SixLabors.ImageSharp.Processing.KnownResamplers.html#SixLabors_ImageSharp_Processing_KnownResamplers_Hermite">Hermite</a>  </li>
 </ul>
 </li>
 <li><code>rxy</code> The center position to anchor the image center point to.</li>
-<li><code>ranchor</code>The @&quot;SixLabors.ImageSharp.Processing.AnchorPositionMode&quot; to use.</li>
+<li><code>ranchor</code>The <a class="xref" href="../../api/ImageSharp/SixLabors.ImageSharp.Processing.AnchorPositionMode.html">AnchorPositionMode</a> to use.</li>
 <li><code>compand</code> Whether to compress and expand individual pixel colors values to/from a linear color space when processing.</li>
 </ul>
 <h4 id="format">Format</h4>

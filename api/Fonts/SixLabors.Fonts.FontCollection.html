@@ -96,35 +96,11 @@
     <div><a class="xref" href="SixLabors.Fonts.IFontCollection.html">IFontCollection</a></div>
     <div><a class="xref" href="SixLabors.Fonts.IReadOnlyFontCollection.html">IReadOnlyFontCollection</a></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="SixLabors.Fonts.html">SixLabors.Fonts</a></h6>
   <h6><strong>Assembly</strong>: SixLabors.Fonts.dll</h6>
   <h5 id="SixLabors_Fonts_FontCollection_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class FontCollection : IFontCollection, IReadOnlyFontCollection</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class FontCollection : object, IFontCollection, IReadOnlyFontCollection</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -155,7 +131,8 @@
   </span>
   <a id="SixLabors_Fonts_FontCollection_Families_" data-uid="SixLabors.Fonts.FontCollection.Families*"></a>
   <h4 id="SixLabors_Fonts_FontCollection_Families" data-uid="SixLabors.Fonts.FontCollection.Families">Families</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the collection of <a class="xref" href="SixLabors.Fonts.FontFamily.html">FontFamily</a> objects associated with this <a class="xref" href="SixLabors.Fonts.FontCollection.html">FontCollection</a> in the invariant culture.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -171,8 +148,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="SixLabors.Fonts.FontFamily.html">FontFamily</a>&gt;</td>
-        <td></td>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="SixLabors.Fonts.FontFamily.html">FontFamily</a>&gt;</td>
+        <td><p>The families.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -180,14 +158,15 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/SixLabors/Fonts/new/master/apiSpec/new?filename=SixLabors_Fonts_FontCollection_FamiliesByCulture_System_Globalization_CultureInfo_.md&amp;value=---%0Auid%3A%20SixLabors.Fonts.FontCollection.FamiliesByCulture(System.Globalization.CultureInfo)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/SixLabors/Fonts/new/master/apiSpec/new?filename=SixLabors_Fonts_FontCollection_FamiliesByCulture_CultureInfo_.md&amp;value=---%0Auid%3A%20SixLabors.Fonts.FontCollection.FamiliesByCulture(CultureInfo)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/SixLabors/Fonts/blob/2974546fb30dfdb4e18b8443c8af10d1353c246d/src/SixLabors.Fonts/FontCollection.cs/#L35">View Source</a>
   </span>
   <a id="SixLabors_Fonts_FontCollection_FamiliesByCulture_" data-uid="SixLabors.Fonts.FontCollection.FamiliesByCulture*"></a>
-  <h4 id="SixLabors_Fonts_FontCollection_FamiliesByCulture_System_Globalization_CultureInfo_" data-uid="SixLabors.Fonts.FontCollection.FamiliesByCulture(System.Globalization.CultureInfo)">FamiliesByCulture(CultureInfo)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="SixLabors_Fonts_FontCollection_FamiliesByCulture_CultureInfo_" data-uid="SixLabors.Fonts.FontCollection.FamiliesByCulture(CultureInfo)">FamiliesByCulture(CultureInfo)</h4>
+  <div class="markdown level1 summary"><p>Gets the collection of <a class="xref" href="SixLabors.Fonts.FontFamily.html">FontFamily</a> objects associated with this <a class="xref" href="SixLabors.Fonts.FontCollection.html">FontCollection</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -204,9 +183,10 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.globalization.cultureinfo">CultureInfo</a></td>
+        <td><span class="xref">CultureInfo</span></td>
         <td><span class="parametername">culture</span></td>
-        <td></td>
+        <td><p>The culture to use while getting the family name from the installed set of fonts.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -220,8 +200,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="SixLabors.Fonts.FontFamily.html">FontFamily</a>&gt;</td>
-        <td></td>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="SixLabors.Fonts.FontFamily.html">FontFamily</a>&gt;</td>
+        <td><p>The set of fonts families using the fonts culture aware font name</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -234,7 +215,8 @@
   </span>
   <a id="SixLabors_Fonts_FontCollection_Find_" data-uid="SixLabors.Fonts.FontCollection.Find*"></a>
   <h4 id="SixLabors_Fonts_FontCollection_Find_System_String_" data-uid="SixLabors.Fonts.FontCollection.Find(System.String)">Find(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Finds the specified font family using the invariant culture font family name.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -253,7 +235,8 @@
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">fontFamily</span></td>
-        <td></td>
+        <td><p>The font family.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -268,20 +251,22 @@
     <tbody>
       <tr>
         <td><a class="xref" href="SixLabors.Fonts.FontFamily.html">FontFamily</a></td>
-        <td></td>
+        <td><p>The family if installed otherwise throws <a class="xref" href="SixLabors.Fonts.Exceptions.FontFamilyNotFoundException.html">FontFamilyNotFoundException</a></p>
+</td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/SixLabors/Fonts/new/master/apiSpec/new?filename=SixLabors_Fonts_FontCollection_Find_System_String_System_Globalization_CultureInfo_.md&amp;value=---%0Auid%3A%20SixLabors.Fonts.FontCollection.Find(System.String%2CSystem.Globalization.CultureInfo)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/SixLabors/Fonts/new/master/apiSpec/new?filename=SixLabors_Fonts_FontCollection_Find_System_String_CultureInfo_.md&amp;value=---%0Auid%3A%20SixLabors.Fonts.FontCollection.Find(System.String%2CCultureInfo)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/SixLabors/Fonts/blob/2974546fb30dfdb4e18b8443c8af10d1353c246d/src/SixLabors.Fonts/FontCollection.cs/#L243">View Source</a>
   </span>
   <a id="SixLabors_Fonts_FontCollection_Find_" data-uid="SixLabors.Fonts.FontCollection.Find*"></a>
-  <h4 id="SixLabors_Fonts_FontCollection_Find_System_String_System_Globalization_CultureInfo_" data-uid="SixLabors.Fonts.FontCollection.Find(System.String,System.Globalization.CultureInfo)">Find(String, CultureInfo)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="SixLabors_Fonts_FontCollection_Find_System_String_CultureInfo_" data-uid="SixLabors.Fonts.FontCollection.Find(System.String,CultureInfo)">Find(String, CultureInfo)</h4>
+  <div class="markdown level1 summary"><p>Finds the specified font family.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -300,12 +285,14 @@
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">fontFamily</span></td>
-        <td></td>
+        <td><p>The font family.</p>
+</td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.globalization.cultureinfo">CultureInfo</a></td>
+        <td><span class="xref">CultureInfo</span></td>
         <td><span class="parametername">culture</span></td>
-        <td></td>
+        <td><p>The culture to use while getting the family name from the installed set of fonts.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -320,19 +307,20 @@
     <tbody>
       <tr>
         <td><a class="xref" href="SixLabors.Fonts.FontFamily.html">FontFamily</a></td>
-        <td></td>
+        <td><p>The family if installed otherwise throws <a class="xref" href="SixLabors.Fonts.Exceptions.FontFamilyNotFoundException.html">FontFamilyNotFoundException</a></p>
+</td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/SixLabors/Fonts/new/master/apiSpec/new?filename=SixLabors_Fonts_FontCollection_Install_System_IO_Stream_.md&amp;value=---%0Auid%3A%20SixLabors.Fonts.FontCollection.Install(System.IO.Stream)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/SixLabors/Fonts/new/master/apiSpec/new?filename=SixLabors_Fonts_FontCollection_Install_Stream_.md&amp;value=---%0Auid%3A%20SixLabors.Fonts.FontCollection.Install(Stream)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/SixLabors/Fonts/blob/2974546fb30dfdb4e18b8443c8af10d1353c246d/src/SixLabors.Fonts/FontCollection.cs/#L67">View Source</a>
   </span>
   <a id="SixLabors_Fonts_FontCollection_Install_" data-uid="SixLabors.Fonts.FontCollection.Install*"></a>
-  <h4 id="SixLabors_Fonts_FontCollection_Install_System_IO_Stream_" data-uid="SixLabors.Fonts.FontCollection.Install(System.IO.Stream)">Install(Stream)</h4>
+  <h4 id="SixLabors_Fonts_FontCollection_Install_Stream_" data-uid="SixLabors.Fonts.FontCollection.Install(Stream)">Install(Stream)</h4>
   <div class="markdown level1 summary"><p>Installs the specified font stream.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -351,7 +339,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.io.stream">Stream</a></td>
+        <td><span class="xref">Stream</span></td>
         <td><span class="parametername">fontStream</span></td>
         <td><p>The font stream.</p>
 </td>
@@ -376,19 +364,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/SixLabors/Fonts/new/master/apiSpec/new?filename=SixLabors_Fonts_FontCollection_Install_System_IO_Stream_SixLabors_Fonts_FontDescription__.md&amp;value=---%0Auid%3A%20SixLabors.Fonts.FontCollection.Install(System.IO.Stream%2CSixLabors.Fonts.FontDescription%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/SixLabors/Fonts/new/master/apiSpec/new?filename=SixLabors_Fonts_FontCollection_Install_Stream_CultureInfo_.md&amp;value=---%0Auid%3A%20SixLabors.Fonts.FontCollection.Install(Stream%2CCultureInfo)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/SixLabors/Fonts/blob/2974546fb30dfdb4e18b8443c8af10d1353c246d/src/SixLabors.Fonts/FontCollection.cs/#L76">View Source</a>
+    <a href="https://github.com/SixLabors/Fonts/blob/2974546fb30dfdb4e18b8443c8af10d1353c246d/src/SixLabors.Fonts/FontCollection.cs/#L131">View Source</a>
   </span>
   <a id="SixLabors_Fonts_FontCollection_Install_" data-uid="SixLabors.Fonts.FontCollection.Install*"></a>
-  <h4 id="SixLabors_Fonts_FontCollection_Install_System_IO_Stream_SixLabors_Fonts_FontDescription__" data-uid="SixLabors.Fonts.FontCollection.Install(System.IO.Stream,SixLabors.Fonts.FontDescription@)">Install(Stream, out FontDescription)</h4>
+  <h4 id="SixLabors_Fonts_FontCollection_Install_Stream_CultureInfo_" data-uid="SixLabors.Fonts.FontCollection.Install(Stream,CultureInfo)">Install(Stream, CultureInfo)</h4>
   <div class="markdown level1 summary"><p>Installs the specified font stream.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public FontFamily Install(Stream fontStream, out FontDescription fontDescription)</code></pre>
+    <pre><code class="lang-csharp hljs">public FontFamily Install(Stream fontStream, CultureInfo culture)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -401,9 +389,71 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.io.stream">Stream</a></td>
+        <td><span class="xref">Stream</span></td>
         <td><span class="parametername">fontStream</span></td>
         <td><p>The font stream.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CultureInfo</span></td>
+        <td><span class="parametername">culture</span></td>
+        <td><p>The culture of the retuend font family</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SixLabors.Fonts.FontFamily.html">FontFamily</a></td>
+        <td><p>the description of the font just loaded.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/SixLabors/Fonts/new/master/apiSpec/new?filename=SixLabors_Fonts_FontCollection_Install_Stream_CultureInfo_SixLabors_Fonts_FontDescription__.md&amp;value=---%0Auid%3A%20SixLabors.Fonts.FontCollection.Install(Stream%2CCultureInfo%2CSixLabors.Fonts.FontDescription%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/SixLabors/Fonts/blob/2974546fb30dfdb4e18b8443c8af10d1353c246d/src/SixLabors.Fonts/FontCollection.cs/#L141">View Source</a>
+  </span>
+  <a id="SixLabors_Fonts_FontCollection_Install_" data-uid="SixLabors.Fonts.FontCollection.Install*"></a>
+  <h4 id="SixLabors_Fonts_FontCollection_Install_Stream_CultureInfo_SixLabors_Fonts_FontDescription__" data-uid="SixLabors.Fonts.FontCollection.Install(Stream,CultureInfo,SixLabors.Fonts.FontDescription@)">Install(Stream, CultureInfo, out FontDescription)</h4>
+  <div class="markdown level1 summary"><p>Installs the specified font stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FontFamily Install(Stream fontStream, CultureInfo culture, out FontDescription fontDescription)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Stream</span></td>
+        <td><span class="parametername">fontStream</span></td>
+        <td><p>The font stream.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CultureInfo</span></td>
+        <td><span class="parametername">culture</span></td>
+        <td><p>The culture of the retuend font family</p>
 </td>
       </tr>
       <tr>
@@ -432,19 +482,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/SixLabors/Fonts/new/master/apiSpec/new?filename=SixLabors_Fonts_FontCollection_Install_System_IO_Stream_System_Globalization_CultureInfo_.md&amp;value=---%0Auid%3A%20SixLabors.Fonts.FontCollection.Install(System.IO.Stream%2CSystem.Globalization.CultureInfo)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/SixLabors/Fonts/new/master/apiSpec/new?filename=SixLabors_Fonts_FontCollection_Install_Stream_SixLabors_Fonts_FontDescription__.md&amp;value=---%0Auid%3A%20SixLabors.Fonts.FontCollection.Install(Stream%2CSixLabors.Fonts.FontDescription%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/SixLabors/Fonts/blob/2974546fb30dfdb4e18b8443c8af10d1353c246d/src/SixLabors.Fonts/FontCollection.cs/#L131">View Source</a>
+    <a href="https://github.com/SixLabors/Fonts/blob/2974546fb30dfdb4e18b8443c8af10d1353c246d/src/SixLabors.Fonts/FontCollection.cs/#L76">View Source</a>
   </span>
   <a id="SixLabors_Fonts_FontCollection_Install_" data-uid="SixLabors.Fonts.FontCollection.Install*"></a>
-  <h4 id="SixLabors_Fonts_FontCollection_Install_System_IO_Stream_System_Globalization_CultureInfo_" data-uid="SixLabors.Fonts.FontCollection.Install(System.IO.Stream,System.Globalization.CultureInfo)">Install(Stream, CultureInfo)</h4>
+  <h4 id="SixLabors_Fonts_FontCollection_Install_Stream_SixLabors_Fonts_FontDescription__" data-uid="SixLabors.Fonts.FontCollection.Install(Stream,SixLabors.Fonts.FontDescription@)">Install(Stream, out FontDescription)</h4>
   <div class="markdown level1 summary"><p>Installs the specified font stream.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public FontFamily Install(Stream fontStream, CultureInfo culture)</code></pre>
+    <pre><code class="lang-csharp hljs">public FontFamily Install(Stream fontStream, out FontDescription fontDescription)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -457,71 +507,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.io.stream">Stream</a></td>
+        <td><span class="xref">Stream</span></td>
         <td><span class="parametername">fontStream</span></td>
         <td><p>The font stream.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.globalization.cultureinfo">CultureInfo</a></td>
-        <td><span class="parametername">culture</span></td>
-        <td><p>The culture of the retuend font family</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="SixLabors.Fonts.FontFamily.html">FontFamily</a></td>
-        <td><p>the description of the font just loaded.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/SixLabors/Fonts/new/master/apiSpec/new?filename=SixLabors_Fonts_FontCollection_Install_System_IO_Stream_System_Globalization_CultureInfo_SixLabors_Fonts_FontDescription__.md&amp;value=---%0Auid%3A%20SixLabors.Fonts.FontCollection.Install(System.IO.Stream%2CSystem.Globalization.CultureInfo%2CSixLabors.Fonts.FontDescription%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/SixLabors/Fonts/blob/2974546fb30dfdb4e18b8443c8af10d1353c246d/src/SixLabors.Fonts/FontCollection.cs/#L141">View Source</a>
-  </span>
-  <a id="SixLabors_Fonts_FontCollection_Install_" data-uid="SixLabors.Fonts.FontCollection.Install*"></a>
-  <h4 id="SixLabors_Fonts_FontCollection_Install_System_IO_Stream_System_Globalization_CultureInfo_SixLabors_Fonts_FontDescription__" data-uid="SixLabors.Fonts.FontCollection.Install(System.IO.Stream,System.Globalization.CultureInfo,SixLabors.Fonts.FontDescription@)">Install(Stream, CultureInfo, out FontDescription)</h4>
-  <div class="markdown level1 summary"><p>Installs the specified font stream.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public FontFamily Install(Stream fontStream, CultureInfo culture, out FontDescription fontDescription)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.io.stream">Stream</a></td>
-        <td><span class="parametername">fontStream</span></td>
-        <td><p>The font stream.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.globalization.cultureinfo">CultureInfo</a></td>
-        <td><span class="parametername">culture</span></td>
-        <td><p>The culture of the retuend font family</p>
 </td>
       </tr>
       <tr>
@@ -600,6 +588,124 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/SixLabors/Fonts/new/master/apiSpec/new?filename=SixLabors_Fonts_FontCollection_Install_System_String_CultureInfo_.md&amp;value=---%0Auid%3A%20SixLabors.Fonts.FontCollection.Install(System.String%2CCultureInfo)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/SixLabors/Fonts/blob/2974546fb30dfdb4e18b8443c8af10d1353c246d/src/SixLabors.Fonts/FontCollection.cs/#L112">View Source</a>
+  </span>
+  <a id="SixLabors_Fonts_FontCollection_Install_" data-uid="SixLabors.Fonts.FontCollection.Install*"></a>
+  <h4 id="SixLabors_Fonts_FontCollection_Install_System_String_CultureInfo_" data-uid="SixLabors.Fonts.FontCollection.Install(System.String,CultureInfo)">Install(String, CultureInfo)</h4>
+  <div class="markdown level1 summary"><p>Installs a font from the specified path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FontFamily Install(string path, CultureInfo culture)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>The path.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CultureInfo</span></td>
+        <td><span class="parametername">culture</span></td>
+        <td><p>The culture of the retuend font family</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SixLabors.Fonts.FontFamily.html">FontFamily</a></td>
+        <td><p>the description of the font just loaded.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/SixLabors/Fonts/new/master/apiSpec/new?filename=SixLabors_Fonts_FontCollection_Install_System_String_CultureInfo_SixLabors_Fonts_FontDescription__.md&amp;value=---%0Auid%3A%20SixLabors.Fonts.FontCollection.Install(System.String%2CCultureInfo%2CSixLabors.Fonts.FontDescription%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/SixLabors/Fonts/blob/2974546fb30dfdb4e18b8443c8af10d1353c246d/src/SixLabors.Fonts/FontCollection.cs/#L122">View Source</a>
+  </span>
+  <a id="SixLabors_Fonts_FontCollection_Install_" data-uid="SixLabors.Fonts.FontCollection.Install*"></a>
+  <h4 id="SixLabors_Fonts_FontCollection_Install_System_String_CultureInfo_SixLabors_Fonts_FontDescription__" data-uid="SixLabors.Fonts.FontCollection.Install(System.String,CultureInfo,SixLabors.Fonts.FontDescription@)">Install(String, CultureInfo, out FontDescription)</h4>
+  <div class="markdown level1 summary"><p>Installs a font from the specified path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FontFamily Install(string path, CultureInfo culture, out FontDescription fontDescription)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>The path.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CultureInfo</span></td>
+        <td><span class="parametername">culture</span></td>
+        <td><p>The culture of the retuend font family</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="SixLabors.Fonts.FontDescription.html">FontDescription</a></td>
+        <td><span class="parametername">fontDescription</span></td>
+        <td><p>The font description of the installed font.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SixLabors.Fonts.FontFamily.html">FontFamily</a></td>
+        <td><p>the description of the font just loaded.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/SixLabors/Fonts/new/master/apiSpec/new?filename=SixLabors_Fonts_FontCollection_Install_System_String_SixLabors_Fonts_FontDescription__.md&amp;value=---%0Auid%3A%20SixLabors.Fonts.FontCollection.Install(System.String%2CSixLabors.Fonts.FontDescription%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
@@ -656,187 +762,13 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/SixLabors/Fonts/new/master/apiSpec/new?filename=SixLabors_Fonts_FontCollection_Install_System_String_System_Globalization_CultureInfo_.md&amp;value=---%0Auid%3A%20SixLabors.Fonts.FontCollection.Install(System.String%2CSystem.Globalization.CultureInfo)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/SixLabors/Fonts/blob/2974546fb30dfdb4e18b8443c8af10d1353c246d/src/SixLabors.Fonts/FontCollection.cs/#L112">View Source</a>
-  </span>
-  <a id="SixLabors_Fonts_FontCollection_Install_" data-uid="SixLabors.Fonts.FontCollection.Install*"></a>
-  <h4 id="SixLabors_Fonts_FontCollection_Install_System_String_System_Globalization_CultureInfo_" data-uid="SixLabors.Fonts.FontCollection.Install(System.String,System.Globalization.CultureInfo)">Install(String, CultureInfo)</h4>
-  <div class="markdown level1 summary"><p>Installs a font from the specified path.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public FontFamily Install(string path, CultureInfo culture)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">path</span></td>
-        <td><p>The path.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.globalization.cultureinfo">CultureInfo</a></td>
-        <td><span class="parametername">culture</span></td>
-        <td><p>The culture of the retuend font family</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="SixLabors.Fonts.FontFamily.html">FontFamily</a></td>
-        <td><p>the description of the font just loaded.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/SixLabors/Fonts/new/master/apiSpec/new?filename=SixLabors_Fonts_FontCollection_Install_System_String_System_Globalization_CultureInfo_SixLabors_Fonts_FontDescription__.md&amp;value=---%0Auid%3A%20SixLabors.Fonts.FontCollection.Install(System.String%2CSystem.Globalization.CultureInfo%2CSixLabors.Fonts.FontDescription%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/SixLabors/Fonts/blob/2974546fb30dfdb4e18b8443c8af10d1353c246d/src/SixLabors.Fonts/FontCollection.cs/#L122">View Source</a>
-  </span>
-  <a id="SixLabors_Fonts_FontCollection_Install_" data-uid="SixLabors.Fonts.FontCollection.Install*"></a>
-  <h4 id="SixLabors_Fonts_FontCollection_Install_System_String_System_Globalization_CultureInfo_SixLabors_Fonts_FontDescription__" data-uid="SixLabors.Fonts.FontCollection.Install(System.String,System.Globalization.CultureInfo,SixLabors.Fonts.FontDescription@)">Install(String, CultureInfo, out FontDescription)</h4>
-  <div class="markdown level1 summary"><p>Installs a font from the specified path.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public FontFamily Install(string path, CultureInfo culture, out FontDescription fontDescription)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">path</span></td>
-        <td><p>The path.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.globalization.cultureinfo">CultureInfo</a></td>
-        <td><span class="parametername">culture</span></td>
-        <td><p>The culture of the retuend font family</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="SixLabors.Fonts.FontDescription.html">FontDescription</a></td>
-        <td><span class="parametername">fontDescription</span></td>
-        <td><p>The font description of the installed font.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="SixLabors.Fonts.FontFamily.html">FontFamily</a></td>
-        <td><p>the description of the font just loaded.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/SixLabors/Fonts/new/master/apiSpec/new?filename=SixLabors_Fonts_FontCollection_InstallCollection_System_IO_Stream_System_Collections_Generic_IEnumerable_SixLabors_Fonts_FontDescription___.md&amp;value=---%0Auid%3A%20SixLabors.Fonts.FontCollection.InstallCollection(System.IO.Stream%2CSystem.Collections.Generic.IEnumerable%7BSixLabors.Fonts.FontDescription%7D%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/SixLabors/Fonts/blob/2974546fb30dfdb4e18b8443c8af10d1353c246d/src/SixLabors.Fonts/FontCollection.cs/#L102">View Source</a>
-  </span>
-  <a id="SixLabors_Fonts_FontCollection_InstallCollection_" data-uid="SixLabors.Fonts.FontCollection.InstallCollection*"></a>
-  <h4 id="SixLabors_Fonts_FontCollection_InstallCollection_System_IO_Stream_System_Collections_Generic_IEnumerable_SixLabors_Fonts_FontDescription___" data-uid="SixLabors.Fonts.FontCollection.InstallCollection(System.IO.Stream,System.Collections.Generic.IEnumerable{SixLabors.Fonts.FontDescription}@)">InstallCollection(Stream, out IEnumerable&lt;FontDescription&gt;)</h4>
-  <div class="markdown level1 summary"><p>Installs a true type font collection (.ttc) from the specified font collection stream.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IEnumerable&lt;FontFamily&gt; InstallCollection(Stream fontCollectionStream, out IEnumerable&lt;FontDescription&gt; fontDescriptions)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.io.stream">Stream</a></td>
-        <td><span class="parametername">fontCollectionStream</span></td>
-        <td><p>The font stream.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="SixLabors.Fonts.FontDescription.html">FontDescription</a>&gt;</td>
-        <td><span class="parametername">fontDescriptions</span></td>
-        <td><p>The descriptions of fonts installed from the collection.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="SixLabors.Fonts.FontFamily.html">FontFamily</a>&gt;</td>
-        <td><p>The font descriptions of the installed fonts.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/SixLabors/Fonts/new/master/apiSpec/new?filename=SixLabors_Fonts_FontCollection_InstallCollection_System_IO_Stream_System_Globalization_CultureInfo_System_Collections_Generic_IEnumerable_SixLabors_Fonts_FontDescription___.md&amp;value=---%0Auid%3A%20SixLabors.Fonts.FontCollection.InstallCollection(System.IO.Stream%2CSystem.Globalization.CultureInfo%2CSystem.Collections.Generic.IEnumerable%7BSixLabors.Fonts.FontDescription%7D%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/SixLabors/Fonts/new/master/apiSpec/new?filename=SixLabors_Fonts_FontCollection_InstallCollection_Stream_CultureInfo_IEnumerable_SixLabors_Fonts_FontDescription___.md&amp;value=---%0Auid%3A%20SixLabors.Fonts.FontCollection.InstallCollection(Stream%2CCultureInfo%2CIEnumerable%7BSixLabors.Fonts.FontDescription%7D%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/SixLabors/Fonts/blob/2974546fb30dfdb4e18b8443c8af10d1353c246d/src/SixLabors.Fonts/FontCollection.cs/#L170">View Source</a>
   </span>
   <a id="SixLabors_Fonts_FontCollection_InstallCollection_" data-uid="SixLabors.Fonts.FontCollection.InstallCollection*"></a>
-  <h4 id="SixLabors_Fonts_FontCollection_InstallCollection_System_IO_Stream_System_Globalization_CultureInfo_System_Collections_Generic_IEnumerable_SixLabors_Fonts_FontDescription___" data-uid="SixLabors.Fonts.FontCollection.InstallCollection(System.IO.Stream,System.Globalization.CultureInfo,System.Collections.Generic.IEnumerable{SixLabors.Fonts.FontDescription}@)">InstallCollection(Stream, CultureInfo, out IEnumerable&lt;FontDescription&gt;)</h4>
+  <h4 id="SixLabors_Fonts_FontCollection_InstallCollection_Stream_CultureInfo_IEnumerable_SixLabors_Fonts_FontDescription___" data-uid="SixLabors.Fonts.FontCollection.InstallCollection(Stream,CultureInfo,IEnumerable{SixLabors.Fonts.FontDescription}@)">InstallCollection(Stream, CultureInfo, out IEnumerable&lt;FontDescription&gt;)</h4>
   <div class="markdown level1 summary"><p>Installs a true type font collection (.ttc) from the specified font collection stream.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -855,19 +787,19 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.io.stream">Stream</a></td>
+        <td><span class="xref">Stream</span></td>
         <td><span class="parametername">fontCollectionStream</span></td>
         <td><p>The font stream.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.globalization.cultureinfo">CultureInfo</a></td>
+        <td><span class="xref">CultureInfo</span></td>
         <td><span class="parametername">culture</span></td>
         <td><p>The culture of the retuend font families</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="SixLabors.Fonts.FontDescription.html">FontDescription</a>&gt;</td>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="SixLabors.Fonts.FontDescription.html">FontDescription</a>&gt;</td>
         <td><span class="parametername">fontDescriptions</span></td>
         <td><p>The descriptions of fonts installed from the collection.</p>
 </td>
@@ -884,7 +816,63 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="SixLabors.Fonts.FontFamily.html">FontFamily</a>&gt;</td>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="SixLabors.Fonts.FontFamily.html">FontFamily</a>&gt;</td>
+        <td><p>The font descriptions of the installed fonts.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/SixLabors/Fonts/new/master/apiSpec/new?filename=SixLabors_Fonts_FontCollection_InstallCollection_Stream_IEnumerable_SixLabors_Fonts_FontDescription___.md&amp;value=---%0Auid%3A%20SixLabors.Fonts.FontCollection.InstallCollection(Stream%2CIEnumerable%7BSixLabors.Fonts.FontDescription%7D%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/SixLabors/Fonts/blob/2974546fb30dfdb4e18b8443c8af10d1353c246d/src/SixLabors.Fonts/FontCollection.cs/#L102">View Source</a>
+  </span>
+  <a id="SixLabors_Fonts_FontCollection_InstallCollection_" data-uid="SixLabors.Fonts.FontCollection.InstallCollection*"></a>
+  <h4 id="SixLabors_Fonts_FontCollection_InstallCollection_Stream_IEnumerable_SixLabors_Fonts_FontDescription___" data-uid="SixLabors.Fonts.FontCollection.InstallCollection(Stream,IEnumerable{SixLabors.Fonts.FontDescription}@)">InstallCollection(Stream, out IEnumerable&lt;FontDescription&gt;)</h4>
+  <div class="markdown level1 summary"><p>Installs a true type font collection (.ttc) from the specified font collection stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;FontFamily&gt; InstallCollection(Stream fontCollectionStream, out IEnumerable&lt;FontDescription&gt; fontDescriptions)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Stream</span></td>
+        <td><span class="parametername">fontCollectionStream</span></td>
+        <td><p>The font stream.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="SixLabors.Fonts.FontDescription.html">FontDescription</a>&gt;</td>
+        <td><span class="parametername">fontDescriptions</span></td>
+        <td><p>The descriptions of fonts installed from the collection.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="SixLabors.Fonts.FontFamily.html">FontFamily</a>&gt;</td>
         <td><p>The font descriptions of the installed fonts.</p>
 </td>
       </tr>
@@ -934,7 +922,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="SixLabors.Fonts.FontFamily.html">FontFamily</a>&gt;</td>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="SixLabors.Fonts.FontFamily.html">FontFamily</a>&gt;</td>
         <td><p>The font descriptions of the installed fonts.</p>
 </td>
       </tr>
@@ -942,69 +930,13 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/SixLabors/Fonts/new/master/apiSpec/new?filename=SixLabors_Fonts_FontCollection_InstallCollection_System_String_System_Collections_Generic_IEnumerable_SixLabors_Fonts_FontDescription___.md&amp;value=---%0Auid%3A%20SixLabors.Fonts.FontCollection.InstallCollection(System.String%2CSystem.Collections.Generic.IEnumerable%7BSixLabors.Fonts.FontDescription%7D%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/SixLabors/Fonts/blob/2974546fb30dfdb4e18b8443c8af10d1353c246d/src/SixLabors.Fonts/FontCollection.cs/#L93">View Source</a>
-  </span>
-  <a id="SixLabors_Fonts_FontCollection_InstallCollection_" data-uid="SixLabors.Fonts.FontCollection.InstallCollection*"></a>
-  <h4 id="SixLabors_Fonts_FontCollection_InstallCollection_System_String_System_Collections_Generic_IEnumerable_SixLabors_Fonts_FontDescription___" data-uid="SixLabors.Fonts.FontCollection.InstallCollection(System.String,System.Collections.Generic.IEnumerable{SixLabors.Fonts.FontDescription}@)">InstallCollection(String, out IEnumerable&lt;FontDescription&gt;)</h4>
-  <div class="markdown level1 summary"><p>Installs a true type font collection (.ttc) from the specified font collection stream.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IEnumerable&lt;FontFamily&gt; InstallCollection(string fontCollectionPath, out IEnumerable&lt;FontDescription&gt; fontDescriptions)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">fontCollectionPath</span></td>
-        <td><p>The font collection path (should be typically a .ttc file like simsun.ttc).</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="SixLabors.Fonts.FontDescription.html">FontDescription</a>&gt;</td>
-        <td><span class="parametername">fontDescriptions</span></td>
-        <td><p>The descriptions of fonts installed from the collection.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="SixLabors.Fonts.FontFamily.html">FontFamily</a>&gt;</td>
-        <td><p>The font descriptions of the installed fonts.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/SixLabors/Fonts/new/master/apiSpec/new?filename=SixLabors_Fonts_FontCollection_InstallCollection_System_String_System_Globalization_CultureInfo_.md&amp;value=---%0Auid%3A%20SixLabors.Fonts.FontCollection.InstallCollection(System.String%2CSystem.Globalization.CultureInfo)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/SixLabors/Fonts/new/master/apiSpec/new?filename=SixLabors_Fonts_FontCollection_InstallCollection_System_String_CultureInfo_.md&amp;value=---%0Auid%3A%20SixLabors.Fonts.FontCollection.InstallCollection(System.String%2CCultureInfo)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/SixLabors/Fonts/blob/2974546fb30dfdb4e18b8443c8af10d1353c246d/src/SixLabors.Fonts/FontCollection.cs/#L150">View Source</a>
   </span>
   <a id="SixLabors_Fonts_FontCollection_InstallCollection_" data-uid="SixLabors.Fonts.FontCollection.InstallCollection*"></a>
-  <h4 id="SixLabors_Fonts_FontCollection_InstallCollection_System_String_System_Globalization_CultureInfo_" data-uid="SixLabors.Fonts.FontCollection.InstallCollection(System.String,System.Globalization.CultureInfo)">InstallCollection(String, CultureInfo)</h4>
+  <h4 id="SixLabors_Fonts_FontCollection_InstallCollection_System_String_CultureInfo_" data-uid="SixLabors.Fonts.FontCollection.InstallCollection(System.String,CultureInfo)">InstallCollection(String, CultureInfo)</h4>
   <div class="markdown level1 summary"><p>Installs a true type font collection (.ttc) from the specified font collection stream.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1029,7 +961,7 @@
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.globalization.cultureinfo">CultureInfo</a></td>
+        <td><span class="xref">CultureInfo</span></td>
         <td><span class="parametername">culture</span></td>
         <td><p>The culture of the retuend font families</p>
 </td>
@@ -1046,7 +978,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="SixLabors.Fonts.FontFamily.html">FontFamily</a>&gt;</td>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="SixLabors.Fonts.FontFamily.html">FontFamily</a>&gt;</td>
         <td><p>The font descriptions of the installed fonts.</p>
 </td>
       </tr>
@@ -1054,13 +986,13 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/SixLabors/Fonts/new/master/apiSpec/new?filename=SixLabors_Fonts_FontCollection_InstallCollection_System_String_System_Globalization_CultureInfo_System_Collections_Generic_IEnumerable_SixLabors_Fonts_FontDescription___.md&amp;value=---%0Auid%3A%20SixLabors.Fonts.FontCollection.InstallCollection(System.String%2CSystem.Globalization.CultureInfo%2CSystem.Collections.Generic.IEnumerable%7BSixLabors.Fonts.FontDescription%7D%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/SixLabors/Fonts/new/master/apiSpec/new?filename=SixLabors_Fonts_FontCollection_InstallCollection_System_String_CultureInfo_IEnumerable_SixLabors_Fonts_FontDescription___.md&amp;value=---%0Auid%3A%20SixLabors.Fonts.FontCollection.InstallCollection(System.String%2CCultureInfo%2CIEnumerable%7BSixLabors.Fonts.FontDescription%7D%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/SixLabors/Fonts/blob/2974546fb30dfdb4e18b8443c8af10d1353c246d/src/SixLabors.Fonts/FontCollection.cs/#L160">View Source</a>
   </span>
   <a id="SixLabors_Fonts_FontCollection_InstallCollection_" data-uid="SixLabors.Fonts.FontCollection.InstallCollection*"></a>
-  <h4 id="SixLabors_Fonts_FontCollection_InstallCollection_System_String_System_Globalization_CultureInfo_System_Collections_Generic_IEnumerable_SixLabors_Fonts_FontDescription___" data-uid="SixLabors.Fonts.FontCollection.InstallCollection(System.String,System.Globalization.CultureInfo,System.Collections.Generic.IEnumerable{SixLabors.Fonts.FontDescription}@)">InstallCollection(String, CultureInfo, out IEnumerable&lt;FontDescription&gt;)</h4>
+  <h4 id="SixLabors_Fonts_FontCollection_InstallCollection_System_String_CultureInfo_IEnumerable_SixLabors_Fonts_FontDescription___" data-uid="SixLabors.Fonts.FontCollection.InstallCollection(System.String,CultureInfo,IEnumerable{SixLabors.Fonts.FontDescription}@)">InstallCollection(String, CultureInfo, out IEnumerable&lt;FontDescription&gt;)</h4>
   <div class="markdown level1 summary"><p>Installs a true type font collection (.ttc) from the specified font collection stream.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1085,13 +1017,13 @@
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.globalization.cultureinfo">CultureInfo</a></td>
+        <td><span class="xref">CultureInfo</span></td>
         <td><span class="parametername">culture</span></td>
         <td><p>The culture of the retuend font families</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="SixLabors.Fonts.FontDescription.html">FontDescription</a>&gt;</td>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="SixLabors.Fonts.FontDescription.html">FontDescription</a>&gt;</td>
         <td><span class="parametername">fontDescriptions</span></td>
         <td><p>The descriptions of fonts installed from the collection.</p>
 </td>
@@ -1108,7 +1040,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="SixLabors.Fonts.FontFamily.html">FontFamily</a>&gt;</td>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="SixLabors.Fonts.FontFamily.html">FontFamily</a>&gt;</td>
         <td><p>The font descriptions of the installed fonts.</p>
 </td>
       </tr>
@@ -1116,18 +1048,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/SixLabors/Fonts/new/master/apiSpec/new?filename=SixLabors_Fonts_FontCollection_TryFind_System_String_SixLabors_Fonts_FontFamily__.md&amp;value=---%0Auid%3A%20SixLabors.Fonts.FontCollection.TryFind(System.String%2CSixLabors.Fonts.FontFamily%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/SixLabors/Fonts/new/master/apiSpec/new?filename=SixLabors_Fonts_FontCollection_InstallCollection_System_String_IEnumerable_SixLabors_Fonts_FontDescription___.md&amp;value=---%0Auid%3A%20SixLabors.Fonts.FontCollection.InstallCollection(System.String%2CIEnumerable%7BSixLabors.Fonts.FontDescription%7D%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/SixLabors/Fonts/blob/2974546fb30dfdb4e18b8443c8af10d1353c246d/src/SixLabors.Fonts/FontCollection.cs/#L283">View Source</a>
+    <a href="https://github.com/SixLabors/Fonts/blob/2974546fb30dfdb4e18b8443c8af10d1353c246d/src/SixLabors.Fonts/FontCollection.cs/#L93">View Source</a>
   </span>
-  <a id="SixLabors_Fonts_FontCollection_TryFind_" data-uid="SixLabors.Fonts.FontCollection.TryFind*"></a>
-  <h4 id="SixLabors_Fonts_FontCollection_TryFind_System_String_SixLabors_Fonts_FontFamily__" data-uid="SixLabors.Fonts.FontCollection.TryFind(System.String,SixLabors.Fonts.FontFamily@)">TryFind(String, out FontFamily)</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="SixLabors_Fonts_FontCollection_InstallCollection_" data-uid="SixLabors.Fonts.FontCollection.InstallCollection*"></a>
+  <h4 id="SixLabors_Fonts_FontCollection_InstallCollection_System_String_IEnumerable_SixLabors_Fonts_FontDescription___" data-uid="SixLabors.Fonts.FontCollection.InstallCollection(System.String,IEnumerable{SixLabors.Fonts.FontDescription}@)">InstallCollection(String, out IEnumerable&lt;FontDescription&gt;)</h4>
+  <div class="markdown level1 summary"><p>Installs a true type font collection (.ttc) from the specified font collection stream.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool TryFind(string fontFamily, out FontFamily family)</code></pre>
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;FontFamily&gt; InstallCollection(string fontCollectionPath, out IEnumerable&lt;FontDescription&gt; fontDescriptions)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1141,13 +1074,15 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">fontFamily</span></td>
-        <td></td>
+        <td><span class="parametername">fontCollectionPath</span></td>
+        <td><p>The font collection path (should be typically a .ttc file like simsun.ttc).</p>
+</td>
       </tr>
       <tr>
-        <td><a class="xref" href="SixLabors.Fonts.FontFamily.html">FontFamily</a></td>
-        <td><span class="parametername">family</span></td>
-        <td></td>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="SixLabors.Fonts.FontDescription.html">FontDescription</a>&gt;</td>
+        <td><span class="parametername">fontDescriptions</span></td>
+        <td><p>The descriptions of fonts installed from the collection.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1161,21 +1096,23 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td></td>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="SixLabors.Fonts.FontFamily.html">FontFamily</a>&gt;</td>
+        <td><p>The font descriptions of the installed fonts.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/SixLabors/Fonts/new/master/apiSpec/new?filename=SixLabors_Fonts_FontCollection_TryFind_System_String_System_Globalization_CultureInfo_SixLabors_Fonts_FontFamily__.md&amp;value=---%0Auid%3A%20SixLabors.Fonts.FontCollection.TryFind(System.String%2CSystem.Globalization.CultureInfo%2CSixLabors.Fonts.FontFamily%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/SixLabors/Fonts/new/master/apiSpec/new?filename=SixLabors_Fonts_FontCollection_TryFind_System_String_CultureInfo_SixLabors_Fonts_FontFamily__.md&amp;value=---%0Auid%3A%20SixLabors.Fonts.FontCollection.TryFind(System.String%2CCultureInfo%2CSixLabors.Fonts.FontFamily%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/SixLabors/Fonts/blob/2974546fb30dfdb4e18b8443c8af10d1353c246d/src/SixLabors.Fonts/FontCollection.cs/#L247">View Source</a>
   </span>
   <a id="SixLabors_Fonts_FontCollection_TryFind_" data-uid="SixLabors.Fonts.FontCollection.TryFind*"></a>
-  <h4 id="SixLabors_Fonts_FontCollection_TryFind_System_String_System_Globalization_CultureInfo_SixLabors_Fonts_FontFamily__" data-uid="SixLabors.Fonts.FontCollection.TryFind(System.String,System.Globalization.CultureInfo,SixLabors.Fonts.FontFamily@)">TryFind(String, CultureInfo, out FontFamily)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="SixLabors_Fonts_FontCollection_TryFind_System_String_CultureInfo_SixLabors_Fonts_FontFamily__" data-uid="SixLabors.Fonts.FontCollection.TryFind(System.String,CultureInfo,SixLabors.Fonts.FontFamily@)">TryFind(String, CultureInfo, out FontFamily)</h4>
+  <div class="markdown level1 summary"><p>Finds the specified font family.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1194,17 +1131,20 @@
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">fontFamily</span></td>
-        <td></td>
+        <td><p>The font family to find.</p>
+</td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.globalization.cultureinfo">CultureInfo</a></td>
+        <td><span class="xref">CultureInfo</span></td>
         <td><span class="parametername">culture</span></td>
-        <td></td>
+        <td><p>The culture to use while getting the family name from the installed set of fonts.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="SixLabors.Fonts.FontFamily.html">FontFamily</a></td>
         <td><span class="parametername">family</span></td>
-        <td></td>
+        <td><p>The found family.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1219,7 +1159,64 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td></td>
+        <td><p>true if a font of that family has been installed into the font collection.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/SixLabors/Fonts/new/master/apiSpec/new?filename=SixLabors_Fonts_FontCollection_TryFind_System_String_SixLabors_Fonts_FontFamily__.md&amp;value=---%0Auid%3A%20SixLabors.Fonts.FontCollection.TryFind(System.String%2CSixLabors.Fonts.FontFamily%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/SixLabors/Fonts/blob/2974546fb30dfdb4e18b8443c8af10d1353c246d/src/SixLabors.Fonts/FontCollection.cs/#L283">View Source</a>
+  </span>
+  <a id="SixLabors_Fonts_FontCollection_TryFind_" data-uid="SixLabors.Fonts.FontCollection.TryFind*"></a>
+  <h4 id="SixLabors_Fonts_FontCollection_TryFind_System_String_SixLabors_Fonts_FontFamily__" data-uid="SixLabors.Fonts.FontCollection.TryFind(System.String,SixLabors.Fonts.FontFamily@)">TryFind(String, out FontFamily)</h4>
+  <div class="markdown level1 summary"><p>Finds the specified font family using the invariant culture font family name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryFind(string fontFamily, out FontFamily family)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">fontFamily</span></td>
+        <td><p>The font family to find.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="SixLabors.Fonts.FontFamily.html">FontFamily</a></td>
+        <td><span class="parametername">family</span></td>
+        <td><p>The found family.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>true if a font of that family has been installed into the font collection.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1229,19 +1226,6 @@
   </div>
   <div>
       <a class="xref" href="SixLabors.Fonts.IReadOnlyFontCollection.html">IReadOnlyFontCollection</a>
-  </div>
-  <h3 id="extensionmethods">Extension Methods</h3>
-  <div>
-      <a class="xref" href="SixLabors.Fonts.IReadonlyFontCollectionExtensions.html#SixLabors_Fonts_IReadonlyFontCollectionExtensions_CreateFont_SixLabors_Fonts_IReadOnlyFontCollection_System_String_System_Single_SixLabors_Fonts_FontStyle_">IReadonlyFontCollectionExtensions.CreateFont(IReadOnlyFontCollection, String, Single, FontStyle)</a>
-  </div>
-  <div>
-      <a class="xref" href="SixLabors.Fonts.IReadonlyFontCollectionExtensions.html#SixLabors_Fonts_IReadonlyFontCollectionExtensions_CreateFont_SixLabors_Fonts_IReadOnlyFontCollection_System_String_System_Single_">IReadonlyFontCollectionExtensions.CreateFont(IReadOnlyFontCollection, String, Single)</a>
-  </div>
-  <div>
-      <a class="xref" href="SixLabors.Fonts.IReadonlyFontCollectionExtensions.html#SixLabors_Fonts_IReadonlyFontCollectionExtensions_CreateFont_SixLabors_Fonts_IReadOnlyFontCollection_System_String_System_Globalization_CultureInfo_System_Single_SixLabors_Fonts_FontStyle_">IReadonlyFontCollectionExtensions.CreateFont(IReadOnlyFontCollection, String, CultureInfo, Single, FontStyle)</a>
-  </div>
-  <div>
-      <a class="xref" href="SixLabors.Fonts.IReadonlyFontCollectionExtensions.html#SixLabors_Fonts_IReadonlyFontCollectionExtensions_CreateFont_SixLabors_Fonts_IReadOnlyFontCollection_System_String_System_Globalization_CultureInfo_System_Single_">IReadonlyFontCollectionExtensions.CreateFont(IReadOnlyFontCollection, String, CultureInfo, Single)</a>
   </div>
 </article>
           </div>

@@ -83,7 +83,7 @@
   
   <h1 id="SixLabors_ImageSharp_Processing_ProjectiveTransformBuilder" data-uid="SixLabors.ImageSharp.Processing.ProjectiveTransformBuilder" class="text-break">Class ProjectiveTransformBuilder
   </h1>
-  <div class="markdown level0 summary"><p>A helper class for constructing <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.numerics.matrix4x4">Matrix4x4</a> instances for use in projective transforms.</p>
+  <div class="markdown level0 summary"><p>A helper class for constructing <see cref="!:Matrix4x4"></see> instances for use in projective transforms.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -91,47 +91,23 @@
     <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
     <div class="level1"><span class="xref">ProjectiveTransformBuilder</span></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="SixLabors.ImageSharp.Processing.html">SixLabors.ImageSharp.Processing</a></h6>
   <h6><strong>Assembly</strong>: SixLabors.ImageSharp.dll</h6>
   <h5 id="SixLabors_ImageSharp_Processing_ProjectiveTransformBuilder_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class ProjectiveTransformBuilder</code></pre>
+    <pre><code class="lang-csharp hljs">public class ProjectiveTransformBuilder : object</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/SixLabors/ImageSharp/new/master/apiSpec/new?filename=SixLabors_ImageSharp_Processing_ProjectiveTransformBuilder_AppendMatrix_System_Numerics_Matrix4x4_.md&amp;value=---%0Auid%3A%20SixLabors.ImageSharp.Processing.ProjectiveTransformBuilder.AppendMatrix(System.Numerics.Matrix4x4)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/SixLabors/ImageSharp/new/master/apiSpec/new?filename=SixLabors_ImageSharp_Processing_ProjectiveTransformBuilder_AppendMatrix_Matrix4x4_.md&amp;value=---%0Auid%3A%20SixLabors.ImageSharp.Processing.ProjectiveTransformBuilder.AppendMatrix(Matrix4x4)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/SixLabors/ImageSharp/blob/abc15734691d4c254011420a059f259bcfe977f5/src/ImageSharp/Processing/ProjectiveTransformBuilder.cs/#L289">View Source</a>
   </span>
   <a id="SixLabors_ImageSharp_Processing_ProjectiveTransformBuilder_AppendMatrix_" data-uid="SixLabors.ImageSharp.Processing.ProjectiveTransformBuilder.AppendMatrix*"></a>
-  <h4 id="SixLabors_ImageSharp_Processing_ProjectiveTransformBuilder_AppendMatrix_System_Numerics_Matrix4x4_" data-uid="SixLabors.ImageSharp.Processing.ProjectiveTransformBuilder.AppendMatrix(System.Numerics.Matrix4x4)">AppendMatrix(Matrix4x4)</h4>
+  <h4 id="SixLabors_ImageSharp_Processing_ProjectiveTransformBuilder_AppendMatrix_Matrix4x4_" data-uid="SixLabors.ImageSharp.Processing.ProjectiveTransformBuilder.AppendMatrix(Matrix4x4)">AppendMatrix(Matrix4x4)</h4>
   <div class="markdown level1 summary"><p>Appends a raw matrix.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -150,7 +126,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.numerics.matrix4x4">Matrix4x4</a></td>
+        <td><span class="xref">Matrix4x4</span></td>
         <td><span class="parametername">matrix</span></td>
         <td><p>The matrix to append.</p>
 </td>
@@ -185,7 +161,7 @@
       <tr>
         <td><a class="xref" href="SixLabors.ImageSharp.Processing.Processors.Transforms.DegenerateTransformException.html">DegenerateTransformException</a></td>
         <td><p>The resultant matrix is degenerate containing one or more values equivalent
-to <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single.nan">NaN</a> or a zero determinant and therefore cannot be used
+to <see cref="!:float.NaN"></see> or a zero determinant and therefore cannot be used
 for linear transforms.</p>
 </td>
       </tr>
@@ -343,56 +319,6 @@ for linear transforms.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/SixLabors/ImageSharp/new/master/apiSpec/new?filename=SixLabors_ImageSharp_Processing_ProjectiveTransformBuilder_AppendScale_System_Numerics_Vector2_.md&amp;value=---%0Auid%3A%20SixLabors.ImageSharp.Processing.ProjectiveTransformBuilder.AppendScale(System.Numerics.Vector2)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/SixLabors/ImageSharp/blob/abc15734691d4c254011420a059f259bcfe977f5/src/ImageSharp/Processing/ProjectiveTransformBuilder.cs/#L152">View Source</a>
-  </span>
-  <a id="SixLabors_ImageSharp_Processing_ProjectiveTransformBuilder_AppendScale_" data-uid="SixLabors.ImageSharp.Processing.ProjectiveTransformBuilder.AppendScale*"></a>
-  <h4 id="SixLabors_ImageSharp_Processing_ProjectiveTransformBuilder_AppendScale_System_Numerics_Vector2_" data-uid="SixLabors.ImageSharp.Processing.ProjectiveTransformBuilder.AppendScale(System.Numerics.Vector2)">AppendScale(Vector2)</h4>
-  <div class="markdown level1 summary"><p>Appends a scale matrix from the given vector scale.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ProjectiveTransformBuilder AppendScale(Vector2 scales)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.numerics.vector2">Vector2</a></td>
-        <td><span class="parametername">scales</span></td>
-        <td><p>The horizontal and vertical scale.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="SixLabors.ImageSharp.Processing.ProjectiveTransformBuilder.html">ProjectiveTransformBuilder</a></td>
-        <td><p>The <a class="xref" href="SixLabors.ImageSharp.Processing.ProjectiveTransformBuilder.html">ProjectiveTransformBuilder</a>.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
     <a href="https://github.com/SixLabors/ImageSharp/new/master/apiSpec/new?filename=SixLabors_ImageSharp_Processing_ProjectiveTransformBuilder_AppendScale_System_Single_.md&amp;value=---%0Auid%3A%20SixLabors.ImageSharp.Processing.ProjectiveTransformBuilder.AppendScale(System.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
@@ -443,13 +369,63 @@ for linear transforms.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/SixLabors/ImageSharp/new/master/apiSpec/new?filename=SixLabors_ImageSharp_Processing_ProjectiveTransformBuilder_AppendSkewDegrees_System_Single_System_Single_System_Numerics_Vector2_.md&amp;value=---%0Auid%3A%20SixLabors.ImageSharp.Processing.ProjectiveTransformBuilder.AppendSkewDegrees(System.Single%2CSystem.Single%2CSystem.Numerics.Vector2)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/SixLabors/ImageSharp/new/master/apiSpec/new?filename=SixLabors_ImageSharp_Processing_ProjectiveTransformBuilder_AppendScale_Vector2_.md&amp;value=---%0Auid%3A%20SixLabors.ImageSharp.Processing.ProjectiveTransformBuilder.AppendScale(Vector2)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/SixLabors/ImageSharp/blob/abc15734691d4c254011420a059f259bcfe977f5/src/ImageSharp/Processing/ProjectiveTransformBuilder.cs/#L152">View Source</a>
+  </span>
+  <a id="SixLabors_ImageSharp_Processing_ProjectiveTransformBuilder_AppendScale_" data-uid="SixLabors.ImageSharp.Processing.ProjectiveTransformBuilder.AppendScale*"></a>
+  <h4 id="SixLabors_ImageSharp_Processing_ProjectiveTransformBuilder_AppendScale_Vector2_" data-uid="SixLabors.ImageSharp.Processing.ProjectiveTransformBuilder.AppendScale(Vector2)">AppendScale(Vector2)</h4>
+  <div class="markdown level1 summary"><p>Appends a scale matrix from the given vector scale.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ProjectiveTransformBuilder AppendScale(Vector2 scales)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td><span class="parametername">scales</span></td>
+        <td><p>The horizontal and vertical scale.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SixLabors.ImageSharp.Processing.ProjectiveTransformBuilder.html">ProjectiveTransformBuilder</a></td>
+        <td><p>The <a class="xref" href="SixLabors.ImageSharp.Processing.ProjectiveTransformBuilder.html">ProjectiveTransformBuilder</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/SixLabors/ImageSharp/new/master/apiSpec/new?filename=SixLabors_ImageSharp_Processing_ProjectiveTransformBuilder_AppendSkewDegrees_System_Single_System_Single_Vector2_.md&amp;value=---%0Auid%3A%20SixLabors.ImageSharp.Processing.ProjectiveTransformBuilder.AppendSkewDegrees(System.Single%2CSystem.Single%2CVector2)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/SixLabors/ImageSharp/blob/abc15734691d4c254011420a059f259bcfe977f5/src/ImageSharp/Processing/ProjectiveTransformBuilder.cs/#L218">View Source</a>
   </span>
   <a id="SixLabors_ImageSharp_Processing_ProjectiveTransformBuilder_AppendSkewDegrees_" data-uid="SixLabors.ImageSharp.Processing.ProjectiveTransformBuilder.AppendSkewDegrees*"></a>
-  <h4 id="SixLabors_ImageSharp_Processing_ProjectiveTransformBuilder_AppendSkewDegrees_System_Single_System_Single_System_Numerics_Vector2_" data-uid="SixLabors.ImageSharp.Processing.ProjectiveTransformBuilder.AppendSkewDegrees(System.Single,System.Single,System.Numerics.Vector2)">AppendSkewDegrees(Single, Single, Vector2)</h4>
+  <h4 id="SixLabors_ImageSharp_Processing_ProjectiveTransformBuilder_AppendSkewDegrees_System_Single_System_Single_Vector2_" data-uid="SixLabors.ImageSharp.Processing.ProjectiveTransformBuilder.AppendSkewDegrees(System.Single,System.Single,Vector2)">AppendSkewDegrees(Single, Single, Vector2)</h4>
   <div class="markdown level1 summary"><p>Appends a skew matrix using the given angles in degrees at the given origin.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -480,7 +456,7 @@ for linear transforms.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.numerics.vector2">Vector2</a></td>
+        <td><span class="xref">Vector2</span></td>
         <td><span class="parametername">origin</span></td>
         <td><p>The skew origin point.</p>
 </td>
@@ -561,13 +537,13 @@ for linear transforms.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/SixLabors/ImageSharp/new/master/apiSpec/new?filename=SixLabors_ImageSharp_Processing_ProjectiveTransformBuilder_AppendSkewRadians_System_Single_System_Single_System_Numerics_Vector2_.md&amp;value=---%0Auid%3A%20SixLabors.ImageSharp.Processing.ProjectiveTransformBuilder.AppendSkewRadians(System.Single%2CSystem.Single%2CSystem.Numerics.Vector2)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/SixLabors/ImageSharp/new/master/apiSpec/new?filename=SixLabors_ImageSharp_Processing_ProjectiveTransformBuilder_AppendSkewRadians_System_Single_System_Single_Vector2_.md&amp;value=---%0Auid%3A%20SixLabors.ImageSharp.Processing.ProjectiveTransformBuilder.AppendSkewRadians(System.Single%2CSystem.Single%2CVector2)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/SixLabors/ImageSharp/blob/abc15734691d4c254011420a059f259bcfe977f5/src/ImageSharp/Processing/ProjectiveTransformBuilder.cs/#L228">View Source</a>
   </span>
   <a id="SixLabors_ImageSharp_Processing_ProjectiveTransformBuilder_AppendSkewRadians_" data-uid="SixLabors.ImageSharp.Processing.ProjectiveTransformBuilder.AppendSkewRadians*"></a>
-  <h4 id="SixLabors_ImageSharp_Processing_ProjectiveTransformBuilder_AppendSkewRadians_System_Single_System_Single_System_Numerics_Vector2_" data-uid="SixLabors.ImageSharp.Processing.ProjectiveTransformBuilder.AppendSkewRadians(System.Single,System.Single,System.Numerics.Vector2)">AppendSkewRadians(Single, Single, Vector2)</h4>
+  <h4 id="SixLabors_ImageSharp_Processing_ProjectiveTransformBuilder_AppendSkewRadians_System_Single_System_Single_Vector2_" data-uid="SixLabors.ImageSharp.Processing.ProjectiveTransformBuilder.AppendSkewRadians(System.Single,System.Single,Vector2)">AppendSkewRadians(Single, Single, Vector2)</h4>
   <div class="markdown level1 summary"><p>Appends a skew matrix using the given angles in radians at the given origin.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -598,7 +574,7 @@ for linear transforms.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.numerics.vector2">Vector2</a></td>
+        <td><span class="xref">Vector2</span></td>
         <td><span class="parametername">origin</span></td>
         <td><p>The skew origin point.</p>
 </td>
@@ -735,13 +711,13 @@ for linear transforms.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/SixLabors/ImageSharp/new/master/apiSpec/new?filename=SixLabors_ImageSharp_Processing_ProjectiveTransformBuilder_AppendTranslation_System_Numerics_Vector2_.md&amp;value=---%0Auid%3A%20SixLabors.ImageSharp.Processing.ProjectiveTransformBuilder.AppendTranslation(System.Numerics.Vector2)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/SixLabors/ImageSharp/new/master/apiSpec/new?filename=SixLabors_ImageSharp_Processing_ProjectiveTransformBuilder_AppendTranslation_Vector2_.md&amp;value=---%0Auid%3A%20SixLabors.ImageSharp.Processing.ProjectiveTransformBuilder.AppendTranslation(Vector2)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/SixLabors/ImageSharp/blob/abc15734691d4c254011420a059f259bcfe977f5/src/ImageSharp/Processing/ProjectiveTransformBuilder.cs/#L260">View Source</a>
   </span>
   <a id="SixLabors_ImageSharp_Processing_ProjectiveTransformBuilder_AppendTranslation_" data-uid="SixLabors.ImageSharp.Processing.ProjectiveTransformBuilder.AppendTranslation*"></a>
-  <h4 id="SixLabors_ImageSharp_Processing_ProjectiveTransformBuilder_AppendTranslation_System_Numerics_Vector2_" data-uid="SixLabors.ImageSharp.Processing.ProjectiveTransformBuilder.AppendTranslation(System.Numerics.Vector2)">AppendTranslation(Vector2)</h4>
+  <h4 id="SixLabors_ImageSharp_Processing_ProjectiveTransformBuilder_AppendTranslation_Vector2_" data-uid="SixLabors.ImageSharp.Processing.ProjectiveTransformBuilder.AppendTranslation(Vector2)">AppendTranslation(Vector2)</h4>
   <div class="markdown level1 summary"><p>Appends a translation matrix from the given vector.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -760,7 +736,7 @@ for linear transforms.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.numerics.vector2">Vector2</a></td>
+        <td><span class="xref">Vector2</span></td>
         <td><span class="parametername">position</span></td>
         <td><p>The translation position.</p>
 </td>
@@ -827,8 +803,8 @@ for linear transforms.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.numerics.matrix4x4">Matrix4x4</a></td>
-        <td><p>The <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.numerics.matrix4x4">Matrix4x4</a>.</p>
+        <td><span class="xref">Matrix4x4</span></td>
+        <td><p>The <see cref="!:Matrix4x4"></see>.</p>
 </td>
       </tr>
     </tbody>
@@ -845,7 +821,7 @@ for linear transforms.</p>
       <tr>
         <td><a class="xref" href="SixLabors.ImageSharp.Processing.Processors.Transforms.DegenerateTransformException.html">DegenerateTransformException</a></td>
         <td><p>The resultant matrix is degenerate containing one or more values equivalent
-to <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single.nan">NaN</a> or a zero determinant and therefore cannot be used
+to <see cref="!:float.NaN"></see> or a zero determinant and therefore cannot be used
 for linear transforms.</p>
 </td>
       </tr>
@@ -895,21 +871,21 @@ for linear transforms.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.numerics.matrix4x4">Matrix4x4</a></td>
-        <td><p>The <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.numerics.matrix4x4">Matrix4x4</a>.</p>
+        <td><span class="xref">Matrix4x4</span></td>
+        <td><p>The <see cref="!:Matrix4x4"></see>.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/SixLabors/ImageSharp/new/master/apiSpec/new?filename=SixLabors_ImageSharp_Processing_ProjectiveTransformBuilder_PrependMatrix_System_Numerics_Matrix4x4_.md&amp;value=---%0Auid%3A%20SixLabors.ImageSharp.Processing.ProjectiveTransformBuilder.PrependMatrix(System.Numerics.Matrix4x4)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/SixLabors/ImageSharp/new/master/apiSpec/new?filename=SixLabors_ImageSharp_Processing_ProjectiveTransformBuilder_PrependMatrix_Matrix4x4_.md&amp;value=---%0Auid%3A%20SixLabors.ImageSharp.Processing.ProjectiveTransformBuilder.PrependMatrix(Matrix4x4)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/SixLabors/ImageSharp/blob/abc15734691d4c254011420a059f259bcfe977f5/src/ImageSharp/Processing/ProjectiveTransformBuilder.cs/#L273">View Source</a>
   </span>
   <a id="SixLabors_ImageSharp_Processing_ProjectiveTransformBuilder_PrependMatrix_" data-uid="SixLabors.ImageSharp.Processing.ProjectiveTransformBuilder.PrependMatrix*"></a>
-  <h4 id="SixLabors_ImageSharp_Processing_ProjectiveTransformBuilder_PrependMatrix_System_Numerics_Matrix4x4_" data-uid="SixLabors.ImageSharp.Processing.ProjectiveTransformBuilder.PrependMatrix(System.Numerics.Matrix4x4)">PrependMatrix(Matrix4x4)</h4>
+  <h4 id="SixLabors_ImageSharp_Processing_ProjectiveTransformBuilder_PrependMatrix_Matrix4x4_" data-uid="SixLabors.ImageSharp.Processing.ProjectiveTransformBuilder.PrependMatrix(Matrix4x4)">PrependMatrix(Matrix4x4)</h4>
   <div class="markdown level1 summary"><p>Prepends a raw matrix.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -928,7 +904,7 @@ for linear transforms.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.numerics.matrix4x4">Matrix4x4</a></td>
+        <td><span class="xref">Matrix4x4</span></td>
         <td><span class="parametername">matrix</span></td>
         <td><p>The matrix to prepend.</p>
 </td>
@@ -963,7 +939,7 @@ for linear transforms.</p>
       <tr>
         <td><a class="xref" href="SixLabors.ImageSharp.Processing.Processors.Transforms.DegenerateTransformException.html">DegenerateTransformException</a></td>
         <td><p>The resultant matrix is degenerate containing one or more values equivalent
-to <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single.nan">NaN</a> or a zero determinant and therefore cannot be used
+to <see cref="!:float.NaN"></see> or a zero determinant and therefore cannot be used
 for linear transforms.</p>
 </td>
       </tr>
@@ -1121,56 +1097,6 @@ for linear transforms.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/SixLabors/ImageSharp/new/master/apiSpec/new?filename=SixLabors_ImageSharp_Processing_ProjectiveTransformBuilder_PrependScale_System_Numerics_Vector2_.md&amp;value=---%0Auid%3A%20SixLabors.ImageSharp.Processing.ProjectiveTransformBuilder.PrependScale(System.Numerics.Vector2)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/SixLabors/ImageSharp/blob/abc15734691d4c254011420a059f259bcfe977f5/src/ImageSharp/Processing/ProjectiveTransformBuilder.cs/#L128">View Source</a>
-  </span>
-  <a id="SixLabors_ImageSharp_Processing_ProjectiveTransformBuilder_PrependScale_" data-uid="SixLabors.ImageSharp.Processing.ProjectiveTransformBuilder.PrependScale*"></a>
-  <h4 id="SixLabors_ImageSharp_Processing_ProjectiveTransformBuilder_PrependScale_System_Numerics_Vector2_" data-uid="SixLabors.ImageSharp.Processing.ProjectiveTransformBuilder.PrependScale(System.Numerics.Vector2)">PrependScale(Vector2)</h4>
-  <div class="markdown level1 summary"><p>Prepends a scale matrix from the given vector scale.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ProjectiveTransformBuilder PrependScale(Vector2 scales)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.numerics.vector2">Vector2</a></td>
-        <td><span class="parametername">scales</span></td>
-        <td><p>The horizontal and vertical scale.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="SixLabors.ImageSharp.Processing.ProjectiveTransformBuilder.html">ProjectiveTransformBuilder</a></td>
-        <td><p>The <a class="xref" href="SixLabors.ImageSharp.Processing.ProjectiveTransformBuilder.html">ProjectiveTransformBuilder</a>.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
     <a href="https://github.com/SixLabors/ImageSharp/new/master/apiSpec/new?filename=SixLabors_ImageSharp_Processing_ProjectiveTransformBuilder_PrependScale_System_Single_.md&amp;value=---%0Auid%3A%20SixLabors.ImageSharp.Processing.ProjectiveTransformBuilder.PrependScale(System.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
@@ -1221,13 +1147,63 @@ for linear transforms.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/SixLabors/ImageSharp/new/master/apiSpec/new?filename=SixLabors_ImageSharp_Processing_ProjectiveTransformBuilder_PrependSkewDegrees_System_Single_System_Single_System_Numerics_Vector2_.md&amp;value=---%0Auid%3A%20SixLabors.ImageSharp.Processing.ProjectiveTransformBuilder.PrependSkewDegrees(System.Single%2CSystem.Single%2CSystem.Numerics.Vector2)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/SixLabors/ImageSharp/new/master/apiSpec/new?filename=SixLabors_ImageSharp_Processing_ProjectiveTransformBuilder_PrependScale_Vector2_.md&amp;value=---%0Auid%3A%20SixLabors.ImageSharp.Processing.ProjectiveTransformBuilder.PrependScale(Vector2)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/SixLabors/ImageSharp/blob/abc15734691d4c254011420a059f259bcfe977f5/src/ImageSharp/Processing/ProjectiveTransformBuilder.cs/#L128">View Source</a>
+  </span>
+  <a id="SixLabors_ImageSharp_Processing_ProjectiveTransformBuilder_PrependScale_" data-uid="SixLabors.ImageSharp.Processing.ProjectiveTransformBuilder.PrependScale*"></a>
+  <h4 id="SixLabors_ImageSharp_Processing_ProjectiveTransformBuilder_PrependScale_Vector2_" data-uid="SixLabors.ImageSharp.Processing.ProjectiveTransformBuilder.PrependScale(Vector2)">PrependScale(Vector2)</h4>
+  <div class="markdown level1 summary"><p>Prepends a scale matrix from the given vector scale.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ProjectiveTransformBuilder PrependScale(Vector2 scales)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td><span class="parametername">scales</span></td>
+        <td><p>The horizontal and vertical scale.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SixLabors.ImageSharp.Processing.ProjectiveTransformBuilder.html">ProjectiveTransformBuilder</a></td>
+        <td><p>The <a class="xref" href="SixLabors.ImageSharp.Processing.ProjectiveTransformBuilder.html">ProjectiveTransformBuilder</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/SixLabors/ImageSharp/new/master/apiSpec/new?filename=SixLabors_ImageSharp_Processing_ProjectiveTransformBuilder_PrependSkewDegrees_System_Single_System_Single_Vector2_.md&amp;value=---%0Auid%3A%20SixLabors.ImageSharp.Processing.ProjectiveTransformBuilder.PrependSkewDegrees(System.Single%2CSystem.Single%2CVector2)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/SixLabors/ImageSharp/blob/abc15734691d4c254011420a059f259bcfe977f5/src/ImageSharp/Processing/ProjectiveTransformBuilder.cs/#L180">View Source</a>
   </span>
   <a id="SixLabors_ImageSharp_Processing_ProjectiveTransformBuilder_PrependSkewDegrees_" data-uid="SixLabors.ImageSharp.Processing.ProjectiveTransformBuilder.PrependSkewDegrees*"></a>
-  <h4 id="SixLabors_ImageSharp_Processing_ProjectiveTransformBuilder_PrependSkewDegrees_System_Single_System_Single_System_Numerics_Vector2_" data-uid="SixLabors.ImageSharp.Processing.ProjectiveTransformBuilder.PrependSkewDegrees(System.Single,System.Single,System.Numerics.Vector2)">PrependSkewDegrees(Single, Single, Vector2)</h4>
+  <h4 id="SixLabors_ImageSharp_Processing_ProjectiveTransformBuilder_PrependSkewDegrees_System_Single_System_Single_Vector2_" data-uid="SixLabors.ImageSharp.Processing.ProjectiveTransformBuilder.PrependSkewDegrees(System.Single,System.Single,Vector2)">PrependSkewDegrees(Single, Single, Vector2)</h4>
   <div class="markdown level1 summary"><p>Prepends a skew matrix using the given angles in degrees at the given origin.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1258,7 +1234,7 @@ for linear transforms.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.numerics.vector2">Vector2</a></td>
+        <td><span class="xref">Vector2</span></td>
         <td><span class="parametername">origin</span></td>
         <td><p>The skew origin point.</p>
 </td>
@@ -1339,13 +1315,13 @@ for linear transforms.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/SixLabors/ImageSharp/new/master/apiSpec/new?filename=SixLabors_ImageSharp_Processing_ProjectiveTransformBuilder_PrependSkewRadians_System_Single_System_Single_System_Numerics_Vector2_.md&amp;value=---%0Auid%3A%20SixLabors.ImageSharp.Processing.ProjectiveTransformBuilder.PrependSkewRadians(System.Single%2CSystem.Single%2CSystem.Numerics.Vector2)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/SixLabors/ImageSharp/new/master/apiSpec/new?filename=SixLabors_ImageSharp_Processing_ProjectiveTransformBuilder_PrependSkewRadians_System_Single_System_Single_Vector2_.md&amp;value=---%0Auid%3A%20SixLabors.ImageSharp.Processing.ProjectiveTransformBuilder.PrependSkewRadians(System.Single%2CSystem.Single%2CVector2)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/SixLabors/ImageSharp/blob/abc15734691d4c254011420a059f259bcfe977f5/src/ImageSharp/Processing/ProjectiveTransformBuilder.cs/#L190">View Source</a>
   </span>
   <a id="SixLabors_ImageSharp_Processing_ProjectiveTransformBuilder_PrependSkewRadians_" data-uid="SixLabors.ImageSharp.Processing.ProjectiveTransformBuilder.PrependSkewRadians*"></a>
-  <h4 id="SixLabors_ImageSharp_Processing_ProjectiveTransformBuilder_PrependSkewRadians_System_Single_System_Single_System_Numerics_Vector2_" data-uid="SixLabors.ImageSharp.Processing.ProjectiveTransformBuilder.PrependSkewRadians(System.Single,System.Single,System.Numerics.Vector2)">PrependSkewRadians(Single, Single, Vector2)</h4>
+  <h4 id="SixLabors_ImageSharp_Processing_ProjectiveTransformBuilder_PrependSkewRadians_System_Single_System_Single_Vector2_" data-uid="SixLabors.ImageSharp.Processing.ProjectiveTransformBuilder.PrependSkewRadians(System.Single,System.Single,Vector2)">PrependSkewRadians(Single, Single, Vector2)</h4>
   <div class="markdown level1 summary"><p>Prepends a skew matrix using the given angles in radians at the given origin.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1376,7 +1352,7 @@ for linear transforms.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.numerics.vector2">Vector2</a></td>
+        <td><span class="xref">Vector2</span></td>
         <td><span class="parametername">origin</span></td>
         <td><p>The skew origin point.</p>
 </td>
@@ -1513,13 +1489,13 @@ for linear transforms.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/SixLabors/ImageSharp/new/master/apiSpec/new?filename=SixLabors_ImageSharp_Processing_ProjectiveTransformBuilder_PrependTranslation_System_Numerics_Vector2_.md&amp;value=---%0Auid%3A%20SixLabors.ImageSharp.Processing.ProjectiveTransformBuilder.PrependTranslation(System.Numerics.Vector2)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/SixLabors/ImageSharp/new/master/apiSpec/new?filename=SixLabors_ImageSharp_Processing_ProjectiveTransformBuilder_PrependTranslation_Vector2_.md&amp;value=---%0Auid%3A%20SixLabors.ImageSharp.Processing.ProjectiveTransformBuilder.PrependTranslation(Vector2)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/SixLabors/ImageSharp/blob/abc15734691d4c254011420a059f259bcfe977f5/src/ImageSharp/Processing/ProjectiveTransformBuilder.cs/#L244">View Source</a>
   </span>
   <a id="SixLabors_ImageSharp_Processing_ProjectiveTransformBuilder_PrependTranslation_" data-uid="SixLabors.ImageSharp.Processing.ProjectiveTransformBuilder.PrependTranslation*"></a>
-  <h4 id="SixLabors_ImageSharp_Processing_ProjectiveTransformBuilder_PrependTranslation_System_Numerics_Vector2_" data-uid="SixLabors.ImageSharp.Processing.ProjectiveTransformBuilder.PrependTranslation(System.Numerics.Vector2)">PrependTranslation(Vector2)</h4>
+  <h4 id="SixLabors_ImageSharp_Processing_ProjectiveTransformBuilder_PrependTranslation_Vector2_" data-uid="SixLabors.ImageSharp.Processing.ProjectiveTransformBuilder.PrependTranslation(Vector2)">PrependTranslation(Vector2)</h4>
   <div class="markdown level1 summary"><p>Prepends a translation matrix from the given vector.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1538,7 +1514,7 @@ for linear transforms.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.numerics.vector2">Vector2</a></td>
+        <td><span class="xref">Vector2</span></td>
         <td><span class="parametername">position</span></td>
         <td><p>The translation position.</p>
 </td>

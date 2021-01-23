@@ -80,11 +80,11 @@
 <h1 id="image-caches">Image Caches</h1>
 
 <p>ImageSharp.Web caches the result of any valid processing operation to allow the fast retrieval of future identical requests. The cache is smart, storing additional metadata to allow the detection of updated source images and can be configured to a fine degree to determine the duration a processed image should be cached for.</p>
-<div class="NOTE"><h5>Note</h5><p>It is possible to configure your own image cache by implementing and registering your own version of the @&quot;SixLabors.ImageSharp.Web.Caching.IImageCache&quot; interface.</p>
+<div class="NOTE"><h5>Note</h5><p>It is possible to configure your own image cache by implementing and registering your own version of the <a class="xref" href="../../api/ImageSharp.Web/SixLabors.ImageSharp.Web.Caching.IImageCache.html">IImageCache</a> interface.</p>
 </div>
 <p>The following caches are available for the middleware.</p>
 <h3 id="physicalfilesystemcache">PhysicalFileSystemCache</h3>
-<p>The @&quot;SixLabors.ImageSharp.Web.Caching.PhysicalFileSystemCache&quot; stores processed image files in the <a href="https://docs.microsoft.com/en-us/aspnet/core/fundamentals/?view=aspnetcore-3.1&amp;tabs=macos#web-root">web root</a> folder. This is the default cache installed when configuring the middleware.    </p>
+<p>The <a class="xref" href="../../api/ImageSharp.Web/SixLabors.ImageSharp.Web.Caching.PhysicalFileSystemCache.html">PhysicalFileSystemCache</a> stores processed image files in the <a href="https://docs.microsoft.com/en-us/aspnet/core/fundamentals/?view=aspnetcore-3.1&amp;tabs=macos#web-root">web root</a> folder. This is the default cache installed when configuring the middleware.    </p>
 <p>Images are cached in separate folders based upon a hash of the request URL. this allows the caching of millions of image files without slowing down the file system.</p>
 <h3 id="azureblobstorageimagecache">AzureBlobStorageImageCache</h3>
 <p>This cache allows the caching of image files using <a href="https://docs.microsoft.com/en-us/azure/storage/blobs/">Azure Blob Storage</a> and is available as an external package installable via <a href="https://www.nuget.org/packages/SixLabors.ImageSharp.Web.Providers.Azure">NuGet</a></p>
@@ -116,7 +116,7 @@
 <pre><code class="lang-bash">paket add SixLabors.ImageSharp.Web.Providers.Azure --version VERSION_NUMBER
 </code></pre></section>
 </div>
-<p>Once installed the cache @SixLabors.ImageSharp.Web.Caching.Azure.AzureBlobStorageCacheOptions can be configured as follows:</p>
+<p>Once installed the cache <a class="xref" href="../../api/ImageSharp.Web.Providers.Azure/SixLabors.ImageSharp.Web.Caching.Azure.AzureBlobStorageCacheOptions.html">AzureBlobStorageCacheOptions</a> can be configured as follows:</p>
 <pre><code class="lang-c#">// Configure and register the container.  
 // Alteratively use `appsettings.json` to represent the class and bind those settings.
 .Configure&lt;AzureBlobStorageCacheOptions&gt;(options =&gt;

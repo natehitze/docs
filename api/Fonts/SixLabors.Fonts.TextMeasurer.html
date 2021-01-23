@@ -91,47 +91,23 @@
     <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
     <div class="level1"><span class="xref">TextMeasurer</span></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="SixLabors.Fonts.html">SixLabors.Fonts</a></h6>
   <h6><strong>Assembly</strong>: SixLabors.Fonts.dll</h6>
   <h5 id="SixLabors_Fonts_TextMeasurer_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class TextMeasurer</code></pre>
+    <pre><code class="lang-csharp hljs">public static class TextMeasurer : object</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/SixLabors/Fonts/new/master/apiSpec/new?filename=SixLabors_Fonts_TextMeasurer_Measure_System_ReadOnlySpan_System_Char__SixLabors_Fonts_RendererOptions_.md&amp;value=---%0Auid%3A%20SixLabors.Fonts.TextMeasurer.Measure(System.ReadOnlySpan%7BSystem.Char%7D%2CSixLabors.Fonts.RendererOptions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/SixLabors/Fonts/new/master/apiSpec/new?filename=SixLabors_Fonts_TextMeasurer_Measure_ReadOnlySpan_System_Char__SixLabors_Fonts_RendererOptions_.md&amp;value=---%0Auid%3A%20SixLabors.Fonts.TextMeasurer.Measure(ReadOnlySpan%7BSystem.Char%7D%2CSixLabors.Fonts.RendererOptions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/SixLabors/Fonts/blob/2974546fb30dfdb4e18b8443c8af10d1353c246d/src/SixLabors.Fonts/TextMeasurer.cs/#L33">View Source</a>
   </span>
   <a id="SixLabors_Fonts_TextMeasurer_Measure_" data-uid="SixLabors.Fonts.TextMeasurer.Measure*"></a>
-  <h4 id="SixLabors_Fonts_TextMeasurer_Measure_System_ReadOnlySpan_System_Char__SixLabors_Fonts_RendererOptions_" data-uid="SixLabors.Fonts.TextMeasurer.Measure(System.ReadOnlySpan{System.Char},SixLabors.Fonts.RendererOptions)">Measure(ReadOnlySpan&lt;Char&gt;, RendererOptions)</h4>
+  <h4 id="SixLabors_Fonts_TextMeasurer_Measure_ReadOnlySpan_System_Char__SixLabors_Fonts_RendererOptions_" data-uid="SixLabors.Fonts.TextMeasurer.Measure(ReadOnlySpan{System.Char},SixLabors.Fonts.RendererOptions)">Measure(ReadOnlySpan&lt;Char&gt;, RendererOptions)</h4>
   <div class="markdown level1 summary"><p>Measures the text.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -150,7 +126,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.char">Char</a>&gt;</td>
+        <td><span class="xref">ReadOnlySpan</span>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.char">Char</a>&gt;</td>
         <td><span class="parametername">text</span></td>
         <td><p>The text.</p>
 </td>
@@ -237,13 +213,13 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/SixLabors/Fonts/new/master/apiSpec/new?filename=SixLabors_Fonts_TextMeasurer_MeasureBounds_System_ReadOnlySpan_System_Char__SixLabors_Fonts_RendererOptions_.md&amp;value=---%0Auid%3A%20SixLabors.Fonts.TextMeasurer.MeasureBounds(System.ReadOnlySpan%7BSystem.Char%7D%2CSixLabors.Fonts.RendererOptions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/SixLabors/Fonts/new/master/apiSpec/new?filename=SixLabors_Fonts_TextMeasurer_MeasureBounds_ReadOnlySpan_System_Char__SixLabors_Fonts_RendererOptions_.md&amp;value=---%0Auid%3A%20SixLabors.Fonts.TextMeasurer.MeasureBounds(ReadOnlySpan%7BSystem.Char%7D%2CSixLabors.Fonts.RendererOptions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/SixLabors/Fonts/blob/2974546fb30dfdb4e18b8443c8af10d1353c246d/src/SixLabors.Fonts/TextMeasurer.cs/#L51">View Source</a>
   </span>
   <a id="SixLabors_Fonts_TextMeasurer_MeasureBounds_" data-uid="SixLabors.Fonts.TextMeasurer.MeasureBounds*"></a>
-  <h4 id="SixLabors_Fonts_TextMeasurer_MeasureBounds_System_ReadOnlySpan_System_Char__SixLabors_Fonts_RendererOptions_" data-uid="SixLabors.Fonts.TextMeasurer.MeasureBounds(System.ReadOnlySpan{System.Char},SixLabors.Fonts.RendererOptions)">MeasureBounds(ReadOnlySpan&lt;Char&gt;, RendererOptions)</h4>
+  <h4 id="SixLabors_Fonts_TextMeasurer_MeasureBounds_ReadOnlySpan_System_Char__SixLabors_Fonts_RendererOptions_" data-uid="SixLabors.Fonts.TextMeasurer.MeasureBounds(ReadOnlySpan{System.Char},SixLabors.Fonts.RendererOptions)">MeasureBounds(ReadOnlySpan&lt;Char&gt;, RendererOptions)</h4>
   <div class="markdown level1 summary"><p>Measures the text.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -262,7 +238,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.char">Char</a>&gt;</td>
+        <td><span class="xref">ReadOnlySpan</span>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.char">Char</a>&gt;</td>
         <td><span class="parametername">text</span></td>
         <td><p>The text.</p>
 </td>
@@ -349,13 +325,13 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/SixLabors/Fonts/new/master/apiSpec/new?filename=SixLabors_Fonts_TextMeasurer_TryMeasureCharacterBounds_System_ReadOnlySpan_System_Char__SixLabors_Fonts_RendererOptions_SixLabors_Fonts_GlyphMetric____.md&amp;value=---%0Auid%3A%20SixLabors.Fonts.TextMeasurer.TryMeasureCharacterBounds(System.ReadOnlySpan%7BSystem.Char%7D%2CSixLabors.Fonts.RendererOptions%2CSixLabors.Fonts.GlyphMetric%5B%5D%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/SixLabors/Fonts/new/master/apiSpec/new?filename=SixLabors_Fonts_TextMeasurer_TryMeasureCharacterBounds_ReadOnlySpan_System_Char__SixLabors_Fonts_RendererOptions_SixLabors_Fonts_GlyphMetric____.md&amp;value=---%0Auid%3A%20SixLabors.Fonts.TextMeasurer.TryMeasureCharacterBounds(ReadOnlySpan%7BSystem.Char%7D%2CSixLabors.Fonts.RendererOptions%2CSixLabors.Fonts.GlyphMetric%5B%5D%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/SixLabors/Fonts/blob/2974546fb30dfdb4e18b8443c8af10d1353c246d/src/SixLabors.Fonts/TextMeasurer.cs/#L61">View Source</a>
   </span>
   <a id="SixLabors_Fonts_TextMeasurer_TryMeasureCharacterBounds_" data-uid="SixLabors.Fonts.TextMeasurer.TryMeasureCharacterBounds*"></a>
-  <h4 id="SixLabors_Fonts_TextMeasurer_TryMeasureCharacterBounds_System_ReadOnlySpan_System_Char__SixLabors_Fonts_RendererOptions_SixLabors_Fonts_GlyphMetric____" data-uid="SixLabors.Fonts.TextMeasurer.TryMeasureCharacterBounds(System.ReadOnlySpan{System.Char},SixLabors.Fonts.RendererOptions,SixLabors.Fonts.GlyphMetric[]@)">TryMeasureCharacterBounds(ReadOnlySpan&lt;Char&gt;, RendererOptions, out GlyphMetric[])</h4>
+  <h4 id="SixLabors_Fonts_TextMeasurer_TryMeasureCharacterBounds_ReadOnlySpan_System_Char__SixLabors_Fonts_RendererOptions_SixLabors_Fonts_GlyphMetric____" data-uid="SixLabors.Fonts.TextMeasurer.TryMeasureCharacterBounds(ReadOnlySpan{System.Char},SixLabors.Fonts.RendererOptions,SixLabors.Fonts.GlyphMetric[]@)">TryMeasureCharacterBounds(ReadOnlySpan&lt;Char&gt;, RendererOptions, out GlyphMetric[])</h4>
   <div class="markdown level1 summary"><p>Measures the character bounds of the text. For each control character the list contains a <code>null</code> element.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -374,7 +350,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.char">Char</a>&gt;</td>
+        <td><span class="xref">ReadOnlySpan</span>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.char">Char</a>&gt;</td>
         <td><span class="parametername">text</span></td>
         <td><p>The text.</p>
 </td>

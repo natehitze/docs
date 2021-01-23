@@ -95,26 +95,11 @@
     <h5>Implements</h5>
     <div><a class="xref" href="SixLabors.ImageSharp.IDeepCloneable-1.html">IDeepCloneable</a>&lt;<a class="xref" href="SixLabors.ImageSharp.Metadata.Profiles.Iptc.IptcValue.html">IptcValue</a>&gt;</div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="SixLabors.ImageSharp.Metadata.Profiles.Iptc.html">SixLabors.ImageSharp.Metadata.Profiles.Iptc</a></h6>
   <h6><strong>Assembly</strong>: SixLabors.ImageSharp.dll</h6>
   <h5 id="SixLabors_ImageSharp_Metadata_Profiles_Iptc_IptcValue_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class IptcValue : IDeepCloneable&lt;IptcValue&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class IptcValue : object, IDeepCloneable&lt;IptcValue&gt;</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
@@ -144,7 +129,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.text.encoding">Encoding</a></td>
+        <td><span class="xref">Encoding</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -285,7 +270,8 @@ to the specification.</p>
   </span>
   <a id="SixLabors_ImageSharp_Metadata_Profiles_Iptc_IptcValue_DeepClone_" data-uid="SixLabors.ImageSharp.Metadata.Profiles.Iptc.IptcValue.DeepClone*"></a>
   <h4 id="SixLabors_ImageSharp_Metadata_Profiles_Iptc_IptcValue_DeepClone" data-uid="SixLabors.ImageSharp.Metadata.Profiles.Iptc.IptcValue.DeepClone">DeepClone()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a new <code data-dev-comment-type="typeparamref" class="typeparamref">T</code> that is a deep copy of the current instance.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -302,7 +288,8 @@ to the specification.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="SixLabors.ImageSharp.Metadata.Profiles.Iptc.IptcValue.html">IptcValue</a></td>
-        <td></td>
+        <td><p>The <code data-dev-comment-type="typeparamref" class="typeparamref">T</code>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -406,8 +393,6 @@ to the specification.</p>
       </tr>
     </tbody>
   </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/SixLabors/ImageSharp/new/master/apiSpec/new?filename=SixLabors_ImageSharp_Metadata_Profiles_Iptc_IptcValue_GetHashCode.md&amp;value=---%0Auid%3A%20SixLabors.ImageSharp.Metadata.Profiles.Iptc.IptcValue.GetHashCode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -440,8 +425,6 @@ to the specification.</p>
       </tr>
     </tbody>
   </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/SixLabors/ImageSharp/new/master/apiSpec/new?filename=SixLabors_ImageSharp_Metadata_Profiles_Iptc_IptcValue_ToByteArray.md&amp;value=---%0Auid%3A%20SixLabors.ImageSharp.Metadata.Profiles.Iptc.IptcValue.ToByteArray%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -469,7 +452,7 @@ to the specification.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
-        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a> array.</p>
+        <td><p>A <see cref="!:System.Byte"></see> array.</p>
 </td>
       </tr>
     </tbody>
@@ -506,17 +489,15 @@ to the specification.</p>
       </tr>
     </tbody>
   </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/SixLabors/ImageSharp/new/master/apiSpec/new?filename=SixLabors_ImageSharp_Metadata_Profiles_Iptc_IptcValue_ToString_System_Text_Encoding_.md&amp;value=---%0Auid%3A%20SixLabors.ImageSharp.Metadata.Profiles.Iptc.IptcValue.ToString(System.Text.Encoding)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/SixLabors/ImageSharp/new/master/apiSpec/new?filename=SixLabors_ImageSharp_Metadata_Profiles_Iptc_IptcValue_ToString_Encoding_.md&amp;value=---%0Auid%3A%20SixLabors.ImageSharp.Metadata.Profiles.Iptc.IptcValue.ToString(Encoding)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/SixLabors/ImageSharp/blob/abc15734691d4c254011420a059f259bcfe977f5/src/ImageSharp/Metadata/Profiles/IPTC/IptcValue.cs/#L212">View Source</a>
   </span>
   <a id="SixLabors_ImageSharp_Metadata_Profiles_Iptc_IptcValue_ToString_" data-uid="SixLabors.ImageSharp.Metadata.Profiles.Iptc.IptcValue.ToString*"></a>
-  <h4 id="SixLabors_ImageSharp_Metadata_Profiles_Iptc_IptcValue_ToString_System_Text_Encoding_" data-uid="SixLabors.ImageSharp.Metadata.Profiles.Iptc.IptcValue.ToString(System.Text.Encoding)">ToString(Encoding)</h4>
+  <h4 id="SixLabors_ImageSharp_Metadata_Profiles_Iptc_IptcValue_ToString_Encoding_" data-uid="SixLabors.ImageSharp.Metadata.Profiles.Iptc.IptcValue.ToString(Encoding)">ToString(Encoding)</h4>
   <div class="markdown level1 summary"><p>Returns a string that represents the current value with the specified encoding.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -535,7 +516,7 @@ to the specification.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.text.encoding">Encoding</a></td>
+        <td><span class="xref">Encoding</span></td>
         <td><span class="parametername">encoding</span></td>
         <td><p>The encoding to use.</p>
 </td>
