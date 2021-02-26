@@ -79,15 +79,15 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="configuration">Configuration</h1>
 
-<p>ImageSharp contains a <a class="xref" href="../../api/ImageSharp/SixLabors.ImageSharp.Configuration.html">Configuration</a> class designed to allow the configuration of application wide settings.
+<p>ImageSharp contains a @&quot;SixLabors.ImageSharp.Configuration&quot; class designed to allow the configuration of application wide settings.
 This class provides a range of configuration opportunities that cover format support, memory and parallelization settings and more.</p>
-<p><a class="xref" href="../../api/ImageSharp/SixLabors.ImageSharp.Configuration.html#SixLabors_ImageSharp_Configuration_Default">Default</a> is a shared singleton that is used to configure the default behavior of the ImageSharp library but it is possible to provide your own instances depended upon your required setup. </p>
+<p>@&quot;SixLabors.ImageSharp.Configuration.Default&quot; is a shared singleton that is used to configure the default behavior of the ImageSharp library but it is possible to provide your own instances depended upon your required setup. </p>
 <h3 id="injection-points">Injection Points.</h3>
-<p>The <a class="xref" href="../../api/ImageSharp/SixLabors.ImageSharp.Configuration.html">Configuration</a> class can be injected in several places within the API to allow overriding global values. This provides you with the means to apply fine grain control over your processing activity to cater for your environment.</p>
+<p>The @&quot;SixLabors.ImageSharp.Configuration&quot; class can be injected in several places within the API to allow overriding global values. This provides you with the means to apply fine grain control over your processing activity to cater for your environment.</p>
 <ul>
-<li>The <a class="xref" href="../../api/ImageSharp/SixLabors.ImageSharp.Image.html">Image</a> and <a class="xref" href="../../api/ImageSharp/SixLabors.ImageSharp.Image-1.html">Image&lt;TPixel&gt;</a> constructors.</li>
-<li>The <a class="xref" href="../../api/ImageSharp/SixLabors.ImageSharp.Image.html#SixLabors_ImageSharp_Image_Load_">Load</a> methods and variants.</li>
-<li>The <a class="xref" href="../../api/ImageSharp/SixLabors.ImageSharp.Processing.ProcessingExtensions.html#SixLabors_ImageSharp_Processing_ProcessingExtensions_Mutate_">Mutate</a> and <a class="xref" href="../../api/ImageSharp/SixLabors.ImageSharp.Processing.ProcessingExtensions.html#SixLabors_ImageSharp_Processing_ProcessingExtensions_Clone_">Clone</a> methods.</li>
+<li>The @&quot;SixLabors.ImageSharp.Image&quot; and @&quot;SixLabors.ImageSharp.Image`1&quot; constructors.</li>
+<li>The @&quot;SixLabors.ImageSharp.Image.Load*&quot; methods and variants.</li>
+<li>The @&quot;SixLabors.ImageSharp.Processing.ProcessingExtensions.Mutate*&quot; and @&quot;SixLabors.ImageSharp.Processing.ProcessingExtensions.Clone*&quot; methods.</li>
 </ul>
 <h3 id="configuring-imageformats">Configuring ImageFormats</h3>
 <p>As mentioned in <a href="imageformats.html">Image Formats</a> it is possible to configure your own format collection for the API to consume.
