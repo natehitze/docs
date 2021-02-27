@@ -438,12 +438,13 @@
   </span>
   <a id="SixLabors_ImageSharp_Processing_Processors_Dithering_ErrorDither_ApplyPaletteDither_" data-uid="SixLabors.ImageSharp.Processing.Processors.Dithering.ErrorDither.ApplyPaletteDither*"></a>
   <h4 id="SixLabors_ImageSharp_Processing_Processors_Dithering_ErrorDither_ApplyPaletteDither__2___0__SixLabors_ImageSharp_ImageFrame___1__SixLabors_ImageSharp_Rectangle_" data-uid="SixLabors.ImageSharp.Processing.Processors.Dithering.ErrorDither.ApplyPaletteDither``2(``0@,SixLabors.ImageSharp.ImageFrame{``1},SixLabors.ImageSharp.Rectangle)">ApplyPaletteDither&lt;TPaletteDitherImageProcessor, TPixel&gt;(TPaletteDitherImageProcessor, ImageFrame&lt;TPixel&gt;, Rectangle)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Transforms the image frame applying a dither matrix.
+This method should be treated as destructive, altering the input pixels.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void ApplyPaletteDither&lt;TPaletteDitherImageProcessor, TPixel&gt;(in TPaletteDitherImageProcessor processor, ImageFrame&lt;TPixel&gt; source, Rectangle bounds)
-
     where TPaletteDitherImageProcessor : struct, IPaletteDitherImageProcessor&lt;TPixel&gt; where TPixel : struct, IPixel&lt;TPixel&gt;</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -459,17 +460,20 @@
       <tr>
         <td><span class="xref">TPaletteDitherImageProcessor</span></td>
         <td><span class="parametername">processor</span></td>
-        <td></td>
+        <td><p>The palette dithering processor.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="SixLabors.ImageSharp.ImageFrame-1.html">ImageFrame</a>&lt;TPixel&gt;</td>
         <td><span class="parametername">source</span></td>
-        <td></td>
+        <td><p>The source image.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="SixLabors.ImageSharp.Rectangle.html">Rectangle</a></td>
         <td><span class="parametername">bounds</span></td>
-        <td></td>
+        <td><p>The region of interest bounds.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -484,11 +488,13 @@
     <tbody>
       <tr>
         <td><span class="parametername">TPaletteDitherImageProcessor</span></td>
-        <td></td>
+        <td><p>The type of palette dithering processor.</p>
+</td>
       </tr>
       <tr>
         <td><span class="parametername">TPixel</span></td>
-        <td></td>
+        <td><p>The pixel format.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -501,12 +507,13 @@
   </span>
   <a id="SixLabors_ImageSharp_Processing_Processors_Dithering_ErrorDither_ApplyQuantizationDither_" data-uid="SixLabors.ImageSharp.Processing.Processors.Dithering.ErrorDither.ApplyQuantizationDither*"></a>
   <h4 id="SixLabors_ImageSharp_Processing_Processors_Dithering_ErrorDither_ApplyQuantizationDither__2___0__SixLabors_ImageSharp_ImageFrame___1__SixLabors_ImageSharp_IndexedImageFrame___1__SixLabors_ImageSharp_Rectangle_" data-uid="SixLabors.ImageSharp.Processing.Processors.Dithering.ErrorDither.ApplyQuantizationDither``2(``0@,SixLabors.ImageSharp.ImageFrame{``1},SixLabors.ImageSharp.IndexedImageFrame{``1},SixLabors.ImageSharp.Rectangle)">ApplyQuantizationDither&lt;TFrameQuantizer, TPixel&gt;(ref TFrameQuantizer, ImageFrame&lt;TPixel&gt;, IndexedImageFrame&lt;TPixel&gt;, Rectangle)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Transforms the quantized image frame applying a dither matrix.
+This method should be treated as destructive, altering the input pixels.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void ApplyQuantizationDither&lt;TFrameQuantizer, TPixel&gt;(ref TFrameQuantizer quantizer, ImageFrame&lt;TPixel&gt; source, IndexedImageFrame&lt;TPixel&gt; destination, Rectangle bounds)
-
     where TFrameQuantizer : struct, IQuantizer&lt;TPixel&gt; where TPixel : struct, IPixel&lt;TPixel&gt;</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -522,22 +529,26 @@
       <tr>
         <td><span class="xref">TFrameQuantizer</span></td>
         <td><span class="parametername">quantizer</span></td>
-        <td></td>
+        <td><p>The frame quantizer.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="SixLabors.ImageSharp.ImageFrame-1.html">ImageFrame</a>&lt;TPixel&gt;</td>
         <td><span class="parametername">source</span></td>
-        <td></td>
+        <td><p>The source image.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="SixLabors.ImageSharp.IndexedImageFrame-1.html">IndexedImageFrame</a>&lt;TPixel&gt;</td>
         <td><span class="parametername">destination</span></td>
-        <td></td>
+        <td><p>The destination quantized frame.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="SixLabors.ImageSharp.Rectangle.html">Rectangle</a></td>
         <td><span class="parametername">bounds</span></td>
-        <td></td>
+        <td><p>The region of interest bounds.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -552,11 +563,13 @@
     <tbody>
       <tr>
         <td><span class="parametername">TFrameQuantizer</span></td>
-        <td></td>
+        <td><p>The type of frame quantizer.</p>
+</td>
       </tr>
       <tr>
         <td><span class="parametername">TPixel</span></td>
-        <td></td>
+        <td><p>The pixel format.</p>
+</td>
       </tr>
     </tbody>
   </table>
