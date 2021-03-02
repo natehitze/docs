@@ -1475,6 +1475,7 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static IndexedImageFrame&lt;TPixel&gt; BuildPaletteAndQuantizeFrame&lt;TPixel&gt;(this IQuantizer&lt;TPixel&gt; quantizer, ImageFrame&lt;TPixel&gt; source, Rectangle bounds)
+
     where TPixel : struct, IPixel&lt;TPixel&gt;</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -1555,6 +1556,7 @@ been requested but not built yet.</p>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static void CheckPaletteState&lt;TPixel&gt;(in ReadOnlyMemory&lt;TPixel&gt; palette)
+
     where TPixel : struct, IPixel&lt;TPixel&gt;</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -1622,6 +1624,7 @@ been requested but not built yet.</p>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static IndexedImageFrame&lt;TPixel&gt; QuantizeFrame&lt;TFrameQuantizer, TPixel&gt;(ref TFrameQuantizer quantizer, ImageFrame&lt;TPixel&gt; source, Rectangle bounds)
+
     where TFrameQuantizer : struct, IQuantizer&lt;TPixel&gt; where TPixel : struct, IPixel&lt;TPixel&gt;</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>

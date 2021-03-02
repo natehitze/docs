@@ -1447,6 +1447,7 @@ This method should be treated as destructive, altering the input pixels.</p>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">void ApplyPaletteDither&lt;TPaletteDitherImageProcessor, TPixel&gt;(in TPaletteDitherImageProcessor processor, ImageFrame&lt;TPixel&gt; source, Rectangle bounds)
+
     where TPaletteDitherImageProcessor : struct, IPaletteDitherImageProcessor&lt;TPixel&gt; where TPixel : struct, IPixel&lt;TPixel&gt;</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -1516,6 +1517,7 @@ This method should be treated as destructive, altering the input pixels.</p>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">void ApplyQuantizationDither&lt;TFrameQuantizer, TPixel&gt;(ref TFrameQuantizer quantizer, ImageFrame&lt;TPixel&gt; source, IndexedImageFrame&lt;TPixel&gt; destination, Rectangle bounds)
+
     where TFrameQuantizer : struct, IQuantizer&lt;TPixel&gt; where TPixel : struct, IPixel&lt;TPixel&gt;</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
