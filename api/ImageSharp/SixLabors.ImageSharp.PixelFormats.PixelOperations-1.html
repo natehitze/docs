@@ -1458,7 +1458,6 @@ for pixel buffers of type <code data-dev-comment-type="typeparamref" class="type
   <h5 id="SixLabors_ImageSharp_PixelFormats_PixelOperations_1_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class PixelOperations&lt;TPixel&gt;
-
     where TPixel : struct, IPixel&lt;TPixel&gt;</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
@@ -1528,7 +1527,6 @@ for pixel buffers of type <code data-dev-comment-type="typeparamref" class="type
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual void From&lt;TSourcePixel&gt;(Configuration configuration, ReadOnlySpan&lt;TSourcePixel&gt; sourcePixels, Span&lt;TPixel&gt; destinationPixels)
-
     where TSourcePixel : struct, IPixel&lt;TSourcePixel&gt;</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -3027,7 +3025,6 @@ In a typical use case the contents of <code data-dev-comment-type="paramref" cla
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual void To&lt;TDestinationPixel&gt;(Configuration configuration, ReadOnlySpan&lt;TPixel&gt; sourcePixels, Span&lt;TDestinationPixel&gt; destinationPixels)
-
     where TDestinationPixel : struct, IPixel&lt;TDestinationPixel&gt;</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>

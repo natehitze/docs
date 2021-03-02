@@ -1457,7 +1457,6 @@
   <h5 id="SixLabors_ImageSharp_PixelFormats_PixelBlender_1_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public abstract class PixelBlender&lt;TPixel&gt;
-
     where TPixel : struct, IPixel&lt;TPixel&gt;</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
@@ -1615,7 +1614,6 @@ At amount = 0, &quot;background&quot; is returned, at amount = 1, &quot;source&q
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void Blend&lt;TPixelSrc&gt;(Configuration configuration, Span&lt;TPixel&gt; destination, ReadOnlySpan&lt;TPixel&gt; background, ReadOnlySpan&lt;TPixelSrc&gt; source, ReadOnlySpan&lt;float&gt; amount)
-
     where TPixelSrc : struct, IPixel&lt;TPixelSrc&gt;</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -1692,7 +1690,6 @@ At amount = 0, &quot;background&quot; is returned, at amount = 1, &quot;source&q
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void Blend&lt;TPixelSrc&gt;(Configuration configuration, Span&lt;TPixel&gt; destination, ReadOnlySpan&lt;TPixel&gt; background, ReadOnlySpan&lt;TPixelSrc&gt; source, float amount)
-
     where TPixelSrc : struct, IPixel&lt;TPixelSrc&gt;</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
