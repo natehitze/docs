@@ -7092,15 +7092,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "articles/imagesharp.drawing/gettingstarted.md",
       "output": {
         ".html": {
           "relative_path": "articles/imagesharp.drawing/gettingstarted.html",
-          "hash": "m9q60QdRlnS3P8jis5tumA=="
+          "hash": "Pki/9Oey5dLook2DBWtiBw=="
         }
       },
       "is_incremental": false,
@@ -7299,15 +7296,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "index.md",
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "YXpco8PJ9odJ+InsVeXA7A=="
+          "hash": "6/5uvDesbpvzeWetXS1rag=="
         }
       },
       "is_incremental": false,
